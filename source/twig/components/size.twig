@@ -1,0 +1,11 @@
+<ul class="size{{ class ? ' ' ~ class }} list-reset">
+	{% for size in sizes %}
+		<li>
+			<input type="radio" name="{{ size.name }}" id="{{ size.id }}" value="{{ size.value }}"
+			       class="radio-hidden">
+			<label for="{{ size.id }}" class="radio-label {{ size.class }}">
+				<span class="label-text">{{ size.label }}</span>
+			</label>
+		</li>
+	{% endfor %}
+</ul>

@@ -1,0 +1,124 @@
+{% extends "../template/layout.twig" %}
+{% block title %}Главная{% endblock %}
+{% block page %}
+	{% include '../partial/home/hero.twig' with {
+		heroDate:'до 29 февраля',
+		heroTitle:'<span>-50%</span>
+					<br>
+					на кровати',
+		heroText:'Сами производим дизайнерские кровати с гарантией качества',
+		heroSlides:[
+			{
+				img:'hero'
+			},
+			{
+				img:'hero'
+			},
+			{
+				img:'hero'
+			},
+			{
+				img:'hero'
+			},
+		],
+		heroItems:[
+			{
+				icon:'images/home/hero/hero-1.svg',
+				alt:'Бесплатная доставка',
+				text:'Бесплатная <br> доставка'
+			},
+			{
+				icon:'images/home/hero/hero-2.svg',
+				alt:'Гарантия 5 лет',
+				text:'Гарантия <br> 5 лет'
+			},
+			{
+				icon:'images/home/hero/hero-3.svg',
+				alt:'Моющиеся ткани',
+				text:'Моющиеся <br> ткани'
+			},
+			{
+				icon:'images/home/hero/hero-4.svg',
+				alt:'Работаем без предоплаты',
+				text:'Работаем <br> без предоплаты'
+			}
+		]
+	} only %}
+	{% include '../partial/home/home-catalog.twig' with {
+		catalogTitle:'Выберите кровать своей мечты'
+	} only %}
+	{% include '../blocks/banner-form.twig' with {
+		bannerTitle:'Получите полный каталог моделей',
+		bannerText:'Оставьте контактный номер телефона и мы отправим полный каталог из 40 моделей кроватей на
+						WhatsApp',
+		bannerBtn:'Получить каталог',
+		bannerImg:'images/home/get-catalog/devices',
+		bannerWidth:'523',
+		bannerHeight:'369',
+		bannerId:'get-catalog'
+
+	} only %}
+	{% include '../partial/home/home-reviews.twig' with {
+		reviewsTitle:'Более 24 000 довольных покупателей',
+	} only %}
+	{% include '../partial/home/special.twig' with {
+		specialTitle:'Делаем специально для вас',
+		specialSubtitle:'Легкое удаление пятен с тканей',
+		specialText:'Благодаря своей уникальной структуре, они устойчивы к пятнам. Будь то пятна от еды, напитков или
+						следы от ручки - с нашими тканями это не проблема',
+		specialAboutOne:'Огромная коллекция тканей и оттенков',
+		specialAboutTwo:'Найдите идеальный цвет, который подойдет к вашему интерьеру'
+
+	} only %}
+	{% include '../partial/home/legs.twig' with {
+		legsCount:'26',
+		legsText:'вариантов ножек',
+		slidesLegs: [
+			{
+				'shield':'0 см',
+				'img':'images/home/legs/legs-mini',
+			},
+			{
+				'shield':'2,5 см',
+				'img':'images/home/legs/legs-mini',
+			},
+			{
+				'shield':'5 см',
+				'img':'images/home/legs/legs-mini',
+			},
+			{
+				'shield':'6 см',
+				'img':'images/home/legs/legs-mini',
+			},
+			{
+				'shield':'10 см',
+				'img':'images/home/legs/legs-mini',
+			},
+			{
+				'shield':'13 см',
+				'img':'images/home/legs/legs-mini',
+			},
+			{
+				'shield':'15 см',
+				'img':'images/home/legs/legs-mini',
+			}
+		]
+	} only %}
+	{% include '../partial/home/materials.twig' with {
+
+	} only %}
+	{% include '../partial/home/review.twig' with {
+
+	} only %}
+	{% include '../partial/home/guarantee.twig' with {
+
+	} only %}
+	{% include '../partial/home/production.twig' with {
+
+	} only %}
+{% endblock %}
+
+{% block scripts %}
+	<script src="js/slider.min.js"></script>
+	<script src="js/glightbox.min.js"></script>
+{% endblock %}

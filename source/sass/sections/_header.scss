@@ -1,0 +1,295 @@
+.header {
+	margin : 16px 0 12px 0;
+
+	@media screen and (min-width : $break-table) {
+		margin : 16px 0 16px 0;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		margin : 20px 0 16px 0;
+	}
+}
+
+.header__wrapper {
+	display          : flex;
+	align-items      : center;
+	background-color : var(--background-color);
+	border-radius    : var(--border-radius-big);
+	padding          : 8px 16px;
+	width            : 100%;
+	justify-content  : space-between;
+	@media screen and (min-width : $break-table) {
+
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.header__panel {
+	display         : flex;
+	justify-content : space-between;
+	align-items     : center;
+
+	@media screen and (min-width : $break-desktop) {
+		width : 100%;
+	}
+}
+
+.header__menu {
+	background-color : var(--background-color);
+	display          : flex;
+	height           : calc(100dvh - 108px);
+	align-items      : stretch;
+	flex-flow        : column nowrap;
+	justify-content  : flex-start;
+	box-sizing       : border-box;
+	opacity          : 0;
+	position         : fixed;
+	left             : 50%;
+	transform        : translateX(-50%);
+	top              : 90px;
+	transition       : visibility .3s ease, opacity .3s ease;
+	visibility       : hidden;
+	width            : calc(100% - 30px);
+	z-index          : 50;
+	overflow-y       : overlay;
+	overflow-x       : hidden;
+	border-radius    : var(--border-radius-big);
+
+	&.active {
+		visibility : visible;
+		opacity    : 1;
+	}
+
+	@media screen and (min-width : $break-table) {
+		top    : 100px;
+		height : calc(100dvh - 144px);
+		width  : calc(100% - 44px);
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		position   : unset;
+		overflow   : visible;
+		opacity    : 1;
+		height     : auto;
+		width      : auto;
+		transform  : unset;
+		visibility : visible;
+	}
+}
+
+.header__wrap {
+	display         : flex;
+	flex-direction  : column;
+	height          : 100%;
+	justify-content : space-between;
+	padding         : 40px 16px 16px 16px;
+	@media screen and (min-width : $break-desktop) {
+		padding        : 0;
+		flex-direction : row;
+	}
+
+}
+
+.header__buttons {
+	display     : flex;
+	align-items : center;
+	gap         : 8px;
+}
+
+.header__buttons--mobile {
+	display        : flex;
+	flex-direction : column;
+	@media screen and (min-width : $break-table) {
+		flex-direction : row;
+		gap            : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		display : none;
+	}
+
+	.header__location {
+		width : 100%;
+
+		@media screen and (min-width : $break-table) {
+			width : 50%;
+		}
+	}
+
+	.header__phone {
+		width : 100%;
+
+		@media screen and (min-width : $break-table) {
+			width : 50%;
+		}
+	}
+}
+
+.header__buttons--desktop {
+	.header__location {
+		display : none;
+
+		@media screen and (min-width : $break-table) {
+			display : flex;
+		}
+	}
+
+	.header__phone {
+		font-size : 0;
+		padding   : 14px 14px;
+
+		span {
+			display : none;
+
+			@media screen and (min-width : $break-table) {
+				display : block;
+			}
+		}
+
+		@media screen and (min-width : $break-table) {
+			font-size : 14px;
+			padding   : 13px 16px;
+		}
+	}
+}
+
+.header__location {
+	button {
+		background-color : var(--white-color);
+		padding          : 13px 16px;
+		border-radius    : var(--border-radius-md);
+		display          : flex;
+		align-items      : center;
+		gap              : 4px;
+		justify-content  : center;
+		border           : none;
+		transition       : color .3s ease;
+		width            : 100%;
+
+		@media screen and (min-width : $break-table) {
+
+		}
+
+		@media screen and (min-width : $break-desktop) {
+
+		}
+
+		&:hover {
+			color : var(--blue-color);
+
+			svg {
+				path {
+					stroke : var(--blue-color);
+				}
+			}
+		}
+
+		svg {
+			path {
+				transition : stroke .3s ease;
+				stroke     : #111;
+			}
+		}
+
+		span {
+			display     : block;
+			font-weight : 400;
+			font-size   : 14px;
+			line-height : 130%;
+		}
+	}
+}
+
+.header__phone {
+	background-color : var(--white-color);
+	padding          : 13px 16px;
+	border-radius    : var(--border-radius-md);
+	display          : flex;
+	align-items      : center;
+	font-weight      : 400;
+	font-size        : 14px;
+	line-height      : 130%;
+	color            : var(--black-color);
+	gap              : 4px;
+	justify-content  : center;
+}
+
+.logo {
+	display     : inline-flex;
+	align-items : center;
+	flex-shrink : 0;
+}
+
+
+.burger {
+	background-color : var(--white-color);
+	border           : none;
+	color            : var(--dark-color);
+	cursor           : pointer;
+	flex-shrink      : 0;
+	height           : 48px;
+	position         : relative;
+	width            : 48px;
+	padding          : 0;
+	border-radius    : var(--border-radius-md);
+
+	@media screen and (min-width : $break-desktop) {
+		display : none;
+	}
+
+	&::before,
+	&::after {
+		background-color : currentColor;
+		content          : "";
+		height           : 2px;
+		left             : 13px;
+		position         : absolute;
+		transition       : transform 0.3s ease-in-out, top 0.3s ease-in-out;
+		width            : 48%;
+	}
+
+	&::before {
+		top : 20px;
+	}
+
+	&::after {
+		bottom : 20px;
+	}
+
+	&__line {
+		background-color : currentColor;
+		border-radius    : 10px;
+		height           : 2px;
+		left             : 0;
+		position         : absolute;
+		top              : 50%;
+		transform        : translateY(-50%);
+		transition       : transform 0.3s ease-in-out;
+		width            : 100%;
+		opacity          : 0;
+	}
+
+	&--active {
+		&::before {
+			top        : 50%;
+
+			transform  : rotate(45deg);
+			transition : transform 0.3s ease-in-out, top 0.3s ease-in-out;
+		}
+
+		&::after {
+			top        : 50%;
+
+			transform  : rotate(-45deg);
+			transition : transform 0.3s ease-in-out, top 0.3s ease-in-out;
+		}
+
+		.burger__line {
+			transform  : scale(0);
+			transition : transform 0.3s ease-in-out;
+		}
+	}
+}

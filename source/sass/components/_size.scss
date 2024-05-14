@@ -1,0 +1,66 @@
+.size {
+	display               : grid;
+	grid-template-columns : repeat(3, 1fr);
+	grid-gap              : 8px;
+
+	li {
+		grid-column : 1 span;
+	}
+
+}
+
+.radio-hidden {
+	border            : 0;
+	clip              : rect(0, 0, 0, 0);
+	-webkit-clip-path : inset(100%);
+	clip-path         : inset(100%);
+	height            : 1px;
+	margin            : -1px;
+	overflow          : hidden;
+	padding           : 0;
+	position          : absolute;
+	width             : 1px;
+}
+
+.radio-label {
+	cursor           : pointer;
+	display          : inline-block;
+	font-weight      : 400;
+	font-size        : 14px;
+	line-height      : 130%;
+	text-align       : center;
+	color            : var(--black-color);
+	padding          : 8px 14px;
+	background-color : var(--white-color);
+	width            : 100%;
+	border           : 1px solid transparent;
+	transition       : background-color .3s ease;
+	border-radius    : 8px;
+
+	&:hover {
+		background-color : rgba(196, 196, 196, 0.3);
+	}
+
+	&.disable {
+		pointer-events : none;
+		color          : rgba(0, 0, 0, 0.1);
+	}
+
+	@media screen and (min-width : $break-table) {
+		font-size : 16px;
+		padding   : 8px 20px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+		border-radius : 8px;
+	}
+}
+
+.radio-hidden:focus + .radio-label {
+
+}
+
+.radio-hidden:checked + .radio-label {
+	border : 1px solid var(--gray-color);
+}

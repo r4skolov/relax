@@ -1,0 +1,149 @@
+.tabs__content {
+	display : none;
+
+	&.active {
+		display : block;
+	}
+}
+
+.tabs__button {
+	border : none;
+}
+
+.tabs__head--fabrics {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	gap             : 8px;
+	flex-wrap       : wrap;
+
+	@media screen and (min-width : $break-table) {
+		gap : 12px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		gap : 15px;
+	}
+}
+
+.tabs__head--fabrics {
+	margin-bottom : 40px;
+}
+
+.tabs__button--fabrics {
+	border-radius    : 30px;
+	padding          : 12px 16px;
+	background-color : var(--background-color);
+	font-weight      : 400;
+	font-size        : 12px;
+	line-height      : 130%;
+	text-align       : center;
+	color            : var(--black-color);
+	transition       : background-color .3s ease, color .3s ease;
+
+	@media screen and (min-width : $break-table) {
+		padding   : 16px 24px;
+		font-size : 14px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		font-size : 16px;
+		padding   : 16px 32px;
+	}
+
+	&:hover {
+		background-color : var(--blue-color);
+		color            : var(--white-color);
+	}
+
+	&.active {
+		background-color : var(--blue-color);
+		color            : var(--white-color);
+	}
+}
+
+.tabs__head--legs {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	gap             : 8px;
+	flex-wrap       : wrap;
+	margin-bottom   : 44px;
+
+	@media screen and (min-width : $break-table) {
+
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		display               : grid;
+		grid-template-columns : repeat(12, 1fr);
+		grid-gap              : 16px;
+	}
+}
+
+.tabs__button--legs {
+	grid-column      : 2 span;
+	border           : none;
+	border-radius    : 30px;
+	padding          : 12px 16px;
+	background-color : var(--background-color);
+	font-weight      : 400;
+	font-size        : 12px;
+	line-height      : 130%;
+	text-align       : center;
+	color            : var(--black-color);
+	transition       : background-color .3s ease, color .3s ease;
+
+	&.active {
+		background-color : var(--blue-color);
+
+		.legs-item__shield {
+			color : var(--white-color);
+
+			@media screen and (min-width : $break-desktop) {
+				color : var(--black-color);
+			}
+		}
+	}
+
+	@media screen and (min-width : $break-table) {
+		padding : 12px 24px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		display : block;
+		padding : 0;
+	}
+
+	.legs-item {
+		height  : auto;
+		padding : 0;
+		margin  : 0;
+
+		img {
+			display : none;
+			@media screen and (min-width : $break-table) {
+
+			}
+
+			@media screen and (min-width : $break-desktop) {
+				display : block;
+			}
+		}
+
+
+	}
+
+	.legs-item__shield {
+		position         : unset;
+		padding          : 0;
+		background-color : transparent;
+		display          : inline;
+		@media screen and (min-width : $break-desktop) {
+			position         : absolute;
+			padding          : 6px 10px;
+			background-color : var(--white-color);
+			display          : inline-block;
+		}
+	}
+}

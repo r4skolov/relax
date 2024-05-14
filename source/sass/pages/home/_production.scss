@@ -1,0 +1,221 @@
+
+.production__wrapper {
+	border-radius    : var(--border-radius-big);
+	background-color : var(--background-color);
+	padding          : 48px 16px;
+
+	@media screen and (min-width : $break-table) {
+		padding : 48px 28px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		padding : 60px 27px;
+	}
+}
+
+.production__head {
+	margin-bottom : 28px;
+
+	@media screen and (min-width : $break-table) {
+		margin-bottom : 40px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		display         : flex;
+		align-items     : flex-start;
+		justify-content : space-between;
+		max-width       : 970px;
+		margin-bottom   : 52px;
+	}
+}
+
+.production__title {
+	font-weight    : 700;
+	font-size      : 24px;
+	line-height    : 120%;
+	letter-spacing : -0.02em;
+	color          : var(--dark-color);
+	max-width      : 412px;
+
+	@media screen and (min-width : $break-table) {
+		font-size : 32px;
+		max-width : 412px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		max-width : 482px;
+		font-size : 36px;
+	}
+}
+
+.production__text {
+	font-weight : 400;
+	font-size   : 14px;
+	line-height : 130%;
+	color       : var(--black-color);
+
+	@media screen and (min-width : $break-table) {
+		font-size : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.production__text--top {
+	max-width     : 382px;
+	margin-bottom : 16px;
+
+	@media screen and (min-width : $break-table) {
+		margin-bottom : 22px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.production__grid {
+	display               : grid;
+	grid-template-columns : repeat(4, 1fr);
+	grid-gap              : 16px;
+
+	@media screen and (min-width : $break-table) {
+		grid-template-columns : repeat(6, 1fr);
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		grid-template-columns : repeat(12, 1fr);
+	}
+}
+
+.production__item {
+	grid-column      : 4 span;
+	background-color : var(--white-color);
+	border-radius    : var(--border-radius-md);
+	padding          : 16px 16px;
+	display          : flex;
+	flex-direction   : column;
+	height           : auto;
+
+
+	@media screen and (min-width : $break-table) {
+		grid-column : 3 span;
+		padding     : 28px 28px;
+		grid-row    : 1/1;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		grid-column : 4 span;
+		grid-row    : unset;
+	}
+}
+
+.production__slider {
+	grid-column : 4 span;
+
+	@media screen and (min-width : $break-table) {
+		grid-column : 6 span;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		grid-column : 4 span;
+	}
+}
+
+.production__top {
+	display       : flex;
+	gap           : 4px;
+	margin-bottom : 54px;
+
+	@media screen and (min-width : $break-table) {
+
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.production__icon {
+	width           : 45px;
+	height          : 45px;
+	border-radius   : 100%;
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+}
+
+.production__name {
+	font-weight   : 500;
+	font-size     : 14px;
+	line-height   : 130%;
+	color         : var(--dark-color);
+	padding       : 12px 16px;
+	border-radius : 30px;
+
+	@media screen and (min-width : $break-table) {
+		font-size : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.production__top--blue {
+	.production__icon {
+		background-color : var(--light-blue);
+	}
+
+	.production__name {
+		background-color : var(--light-blue);
+	}
+}
+
+.production__top--green {
+	.production__icon {
+		background-color : var(--light-green);
+	}
+
+	.production__name {
+		background-color : var(--light-green);
+	}
+}
+
+.production__text--bottom {
+	margin-top : auto;
+}
+
+.production__slider {
+	border-radius : var(--border-radius-md);
+	overflow      : hidden;
+	margin        : 0 -6px;
+}
+
+.production__img {
+	height : 200px;
+	margin : 0 6px;
+
+	@media screen and (min-width : $break-table) {
+		height : 269px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.swiper--production {
+	.swiper-slide {
+		width : 100%;
+
+		img {
+			width         : 100%;
+			height        : 100%;
+			object-fit    : cover;
+			border-radius : var(--border-radius-md);
+		}
+	}
+}

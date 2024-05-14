@@ -1,0 +1,17 @@
+{% for item in fabricsColor %}
+	<div class="fabrics-colors" data-modal-open="fabrics">
+		<div class="fabrics-colors__img">
+			<picture>
+				<source srcset="{{ item.img }}.webp 1x, {{ item.img }}@2x.webp 1.3x"
+				        type="image/webp">
+				<source srcset="{{ item.img }}.jpg 1x, {{ item.img }}@2x.jpg 1.3x"
+				        type="image/jpg">
+				<img src="{{ item.img }}.jpg" width="181" height="180" alt=""
+				     loading="lazy">
+			</picture>
+		</div>
+		<div class="fabrics-colors__number">
+			{{ item.number }}
+		</div>
+	</div>
+{% endfor %}

@@ -1,0 +1,132 @@
+.map__wrapper {
+	background-color : var(--background-color);
+	padding          : 36px 16px;
+	position         : relative;
+	overflow         : hidden;
+	border-radius    : var(--border-radius-big);
+
+	@media screen and (min-width : $break-table) {
+		padding : 48px 28px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		padding : 80px 28px;
+	}
+}
+
+.map__img {
+	position : absolute;
+	top      : 0;
+	right    : -381px;
+	z-index  : 1;
+
+	@media screen and (min-width : $break-table) {
+		right : -267px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		right : 0;
+	}
+
+	img {
+		width     : 647px;
+		height    : 552px;
+		max-width : none;
+	}
+}
+
+.map__main {
+	position : relative;
+	z-index  : 2;
+}
+
+.map__title {
+	font-weight    : 700;
+	font-size      : 24px;
+	line-height    : 120%;
+	letter-spacing : -0.02em;
+	color          : var(--dark-color);
+	max-width      : 241px;
+	margin-bottom  : 12px;
+
+	@media screen and (min-width : $break-table) {
+		font-size     : 32px;
+		margin-bottom : 38px;
+		max-width     : 314px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		font-size     : 36px;
+		max-width     : 360px;
+		margin-bottom : 28px;
+	}
+}
+
+.map__wrap {
+
+	@media screen and (min-width : $break-table) {
+		display : flex;
+		gap     : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.map__list {
+	display        : flex;
+	flex-direction : column;
+	align-items    : flex-start;
+	gap            : 8px;
+
+	&:not(:last-child) {
+		margin-bottom : 8px;
+
+		@media screen and (min-width : $break-table) {
+			margin-bottom : 0;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+
+		}
+	}
+
+	@media screen and (min-width : $break-table) {
+		gap : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+
+	li {
+		align-items      : center;
+		padding          : 12px 24px;
+		background-color : var(--white-color);
+		font-weight      : 400;
+		font-size        : 14px;
+		line-height      : 130%;
+		color            : var(--black-color);
+		display          : inline-flex;
+		border-radius    : var(--border-radius-big);
+
+		@media screen and (min-width : $break-table) {
+			font-size : 16px;
+
+		}
+
+		@media screen and (min-width : $break-desktop) {
+
+		}
+
+		span {
+			width            : 4px;
+			height           : 4px;
+			background-color : var(--blue-color);
+			border-radius    : 100%;
+			margin           : 0 8px;
+			display          : block;
+		}
+	}
+}

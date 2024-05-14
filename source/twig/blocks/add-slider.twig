@@ -1,0 +1,63 @@
+<section class="add-slider section-offset" data-slider="{{ dataSlider }}">
+	<div class="container">
+		<h2 class="section-title add-slider__title">
+			{{ addTitle }}
+		</h2>
+		<div class="add-slider__wrapper">
+			<div class="add-slider__slider">
+				<div class="swiper swiper--addslider">
+					<div class="swiper-wrapper">
+						{% for item in addItem %}
+							<div class="swiper-slide">
+								{% if item.card == true %}
+									{% include '../components/product-card.twig' with {
+										item:item,
+									} only %}
+								{% else %}
+									<div class="add-slider__item">
+										<picture>
+											<source media="(min-width:1199px)"
+											        srcset="{{ item.img }}.webp 1x, {{ item.img }}@2x.webp 1.3x"
+											        type="image/webp">
+											<source media="(min-width:1199px)"
+											        srcset="{{ item.img }}.jpg 1x, {{ item.img }}@2x.jpg 1.3x"
+											        type="image/jpg">
+											<source media="(min-width:767px)"
+											        srcset="{{ item.img }}-tablet.webp 1x, {{ item.img }}-tablet@2x.webp 1.3x"
+											        type="image/webp">
+											<source media="(min-width:767px)"
+											        srcset="{{ item.img }}-tablet.jpg 1x, {{ item.img }}-tablet@2x.jpg 1.3x"
+											        type="image/jpg">
+											<source srcset="{{ item.img }}-mob.webp 1x, {{ item.img }}-mob@2x.webp 1.3x"
+											        type="image/webp">
+											<source srcset="{{ item.img }}-mob.jpg 1x, {{ item.img }}-mob@2x.jpg 1.3x"
+											        type="image/jpg">
+											<img src="{{ item.img }}-mob.jpg" width="435" height="327" alt=""
+											     loading="lazy">
+										</picture>
+									</div>
+								{% endif %}
+							</div>
+						{% endfor %}
+					</div>
+					<div class="swiper-scrollbar"></div>
+				</div>
+			</div>
+			<div class="{{ prevName }} swiper-button swiper-button-prev">
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M15.8327 10L4.16602 10M4.16602 10L9.16602 15M4.16602 10L9.16602 5" stroke="white"
+					      stroke-width="1.40833" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</div>
+			<div class="{{ nextName }} swiper-button swiper-button-next">
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M4.16732 10L15.834 10M15.834 10L10.834 5M15.834 10L10.834 15" stroke="white"
+					      stroke-width="1.40833" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+

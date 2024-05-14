@@ -1,0 +1,239 @@
+
+.special__grid {
+	display               : grid;
+	grid-template-columns : repeat(4, 1fr);
+	grid-gap              : 12px;
+
+	@media screen and (min-width : $break-table) {
+		grid-gap : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		grid-template-columns : repeat(12, 1fr);
+	}
+}
+
+.special__title {
+	text-align    : center;
+	margin-bottom : 28px;
+
+	@media screen and (min-width : $break-table) {
+		margin-bottom : 44px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.special__left {
+	grid-column      : 4 span;
+	padding          : 48px 16px 78px 16px;
+	background-color : var(--light-blue);
+	border-radius    : var(--border-radius-big);
+	overflow         : hidden;
+	position         : relative;
+
+	@media screen and (min-width : $break-table) {
+		padding : 48px 28px 118px 28px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		padding     : 48px 28px;
+		grid-column : 6 span;
+	}
+
+	.b-btn {
+		position : relative;
+		z-index  : 2;
+	}
+}
+
+.special__subtitle {
+	font-weight    : 700;
+	font-size      : 24px;
+	line-height    : 120%;
+	letter-spacing : -0.02em;
+	color          : var(--dark-color);
+	margin-bottom  : 12px;
+	max-width      : 234px;
+	position       : relative;
+	z-index        : 2;
+
+	@media screen and (min-width : $break-table) {
+		font-size     : 32px;
+		margin-bottom : 16px;
+		max-width     : 322px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		font-size : 36px;
+		max-width : 376px;
+	}
+}
+
+.special__text {
+	font-weight   : 400;
+	font-size     : 14px;
+	line-height   : 130%;
+	color         : var(--black-color);
+	margin-bottom : 12px;
+	max-width     : 284px;
+	position      : relative;
+	z-index       : 2;
+
+	@media screen and (min-width : $break-table) {
+		font-size     : 16px;
+		margin-bottom : 16px;
+		max-width     : 381px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		max-width : 322px;
+	}
+}
+
+.special__img {
+	position : absolute;
+	bottom   : 0;
+	right    : 0;
+	z-index  : 1;
+
+	img {
+		max-width : none;
+		width     : 113px;
+
+		@media screen and (min-width : $break-table) {
+			width : 233px;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			width : 199px;
+		}
+	}
+}
+
+.special__right {
+	grid-column      : 4 span;
+	border-radius    : var(--border-radius-big);
+	background-color : var(--background-color);
+	padding-bottom   : 40px;
+	overflow         : hidden;
+
+	@media screen and (min-width : $break-table) {
+		padding-bottom : 60px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		grid-column : 6 span;
+	}
+}
+
+.special__colors {
+	text-align : center;
+	margin-top : 40px;
+
+	@media screen and (min-width : $break-table) {
+		margin-top : 48px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		margin-top : 56px;
+	}
+
+	img {
+		max-width  : none;
+		width      : 1400px;
+		height     : 60px;
+		object-fit : contain;
+		@media screen and (min-width : $break-table) {
+			height : 80px;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+
+		}
+	}
+}
+
+.special__top {
+	position    : relative;
+	margin-left : -20px;
+}
+
+.special__bottom {
+	position    : relative;
+	margin-left : -800px;
+
+	@media screen and (min-width : $break-table) {
+		margin-left : -700px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.special__wrap {
+	margin-top : 36px;
+	position   : relative;
+
+	@media screen and (min-width : $break-table) {
+		margin-top : 51px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		margin-top : 76px;
+	}
+
+	&:after {
+		content        : "450+";
+		position       : absolute;
+		bottom         : -33px;
+		left           : 50%;
+		transform      : translateX(-50%);
+		font-weight    : 700;
+		font-size      : 155px;
+		line-height    : 100%;
+		letter-spacing : -0.02em;
+		color          : var(--dark-color);
+		opacity        : 0.05;
+		z-index        : 1;
+
+		@media screen and (min-width : $break-table) {
+			font-size : 204px;
+			bottom    : -60px;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+
+		}
+	}
+}
+
+.special__about {
+	text-align     : center;
+	margin         : 0 auto;
+	display        : flex;
+	flex-direction : column;
+	align-items    : center;
+	position       : relative;
+	z-index        : 2;
+
+	p {
+		font-size   : 16px;
+		line-height : 130%;
+		color       : var(--black-color);
+
+		&:first-child {
+			font-weight   : 500;
+			margin-bottom : 8px;
+			max-width     : 203px;
+		}
+
+		&:last-child {
+			font-weight : 400;
+			max-width   : 324px;
+		}
+	}
+}

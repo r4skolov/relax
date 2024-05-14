@@ -1,0 +1,264 @@
+.legs {
+	margin-top : 28px;
+
+	@media screen and (min-width : $break-table) {
+		margin-top : 44px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		margin-top : 80px;
+	}
+}
+
+.legs__title {
+	text-align : center;
+	max-width  : 278px;
+	margin     : 0 auto 28px auto;
+
+	@media screen and (min-width : $break-table) {
+		max-width : 408px;
+		margin    : 0 auto 44px auto;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		max-width : 450px;
+	}
+}
+
+.legs__header {
+	margin   : 0 -8px;
+	overflow : hidden;
+}
+
+
+.legs-about {
+	position       : relative;
+	border-radius  : var(--border-radius-big);
+	overflow       : hidden;
+	display        : flex;
+	flex-direction : column-reverse;
+
+	@media screen and (min-width : $break-table) {
+
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+
+.legs-about__main {
+	background-color : var(--background-color);
+	z-index          : 1;
+	padding          : 36px 16px;
+	border-radius    : var(--border-radius-big);
+
+
+	@media screen and (min-width : $break-table) {
+		padding : 48px 28px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		position         : absolute;
+		top              : 28px;
+		left             : 28px;
+		max-width        : 500px;
+		background-color : var(--white-color);
+	}
+
+
+	ul {
+		display     : flex;
+		align-items : center;
+		flex-wrap   : wrap;
+		gap         : 4px;
+		margin-top  : 16px;
+
+		li {
+			width         : 85px;
+			border-radius : var(--border-radius-md);
+			overflow      : hidden;
+
+			button {
+				border     : none;
+				padding    : 0;
+				transform  : scale(1);
+				transition : scale .3s ease;
+
+				&.active {
+					transform : scale(0.95);
+				}
+			}
+		}
+	}
+}
+
+.legs-about__title {
+	font-weight    : 700;
+	font-size      : 24px;
+	line-height    : 120%;
+	letter-spacing : -0.02em;
+	color          : var(--dark-color);
+	margin-bottom  : 12px;
+
+	@media screen and (min-width : $break-table) {
+		font-size     : 32px;
+		margin-bottom : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		font-size : 36px;
+	}
+}
+
+.legs-about__text {
+	max-width     : 330px;
+	font-weight   : 400;
+	font-size     : 14px;
+	line-height   : 130%;
+	color         : var(--dark-color);
+	margin-bottom : 27px;
+
+	@media screen and (min-width : $break-table) {
+		font-size : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.legs-item--tabs {
+	height     : auto;
+	cursor     : pointer;
+	margin     : 0;
+	transition : scale .3s ease;
+
+	@media screen and (min-width : $break-table) {
+
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		margin    : 0 8px;
+		transform : scale(1);
+	}
+
+	.legs-item__shield {
+		position         : unset;
+		padding          : 0;
+		min-width        : auto;
+		background-color : transparent;
+		font-weight      : 400;
+		font-size        : 12px;
+		line-height      : 130%;
+
+		@media screen and (min-width : $break-table) {
+			font-size : 14px;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			position         : absolute;
+			background-color : var(--white-color);
+			min-width        : 80px;
+			padding          : 6px 10px;
+		}
+	}
+
+	.legs-item__img {
+		display : none;
+		@media screen and (min-width : $break-table) {
+
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			display : block;
+		}
+	}
+}
+
+
+.swiper--nav {
+	margin-bottom : 44px;
+	overflow      : visible;
+
+	.swiper-wrapper {
+		gap             : 8px;
+		box-sizing      : border-box;
+		flex-wrap       : wrap;
+		justify-content : center;
+
+		@media screen and (min-width : $break-table) {
+			gap : 12px;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			box-sizing      : content-box;
+			justify-content : space-between;
+			flex-wrap       : unset;
+			gap             : 0;
+		}
+	}
+
+	.swiper-slide {
+		width            : auto;
+		background-color : var(--background-color);
+		padding          : 12px 16px;
+		border-radius    : 30px;
+
+
+		@media screen and (min-width : $break-table) {
+			padding : 12px 24px;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			width            : 14.3%;
+			padding          : 0;
+			background-color : transparent;
+		}
+
+		img {
+			height : 152px;
+		}
+	}
+
+	.swiper-slide-thumb-active {
+		background-color : var(--blue-color);
+
+		@media screen and (min-width : $break-table) {
+
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			background-color : unset;
+		}
+
+		.legs-item--tabs {
+			@media screen and (min-width : $break-desktop) {
+				transform  : scale(0.98);
+				transition : scale .3s ease;
+			}
+		}
+
+		.legs-item__shield {
+			color : var(--white-color);
+
+			@media screen and (min-width : $break-table) {
+
+			}
+
+			@media screen and (min-width : $break-desktop) {
+				color : var(--black-color);
+			}
+		}
+	}
+}
+
+.swiper--background {
+	.swiper-slide {
+		img {
+			width      : 100%;
+			object-fit : cover;
+		}
+	}
+}

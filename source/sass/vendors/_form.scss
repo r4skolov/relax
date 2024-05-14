@@ -1,0 +1,189 @@
+// -----------------------------------------------
+//  Form config
+// -----------------------------------------------
+// Error
+$form-label-color  : #A7A8B1;
+$form-label-size   : 12px;
+$form-label-weight : 400;
+$form-label-margin : 0 0 10px;
+$form-error-color  : var(--red);
+$form-error-size   : 13px;
+$form-error-weight : 500;
+
+// Hint
+$form-hint-color   : #444;
+$form-hint-size    : 12px;
+$form-hint-weight  : 400;
+$form-hint-style   : italic;
+$form-hint-margin  : 5px 0 0;
+
+// Grid
+$form-grid         : 7px;
+
+// -----------------------------------------------
+//  Form style
+// -----------------------------------------------
+.form__row {
+	position   : relative;
+	margin-top : 12px;
+
+	&:first-child {
+		margin-top : 0;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="search"],
+	input[type="number"],
+	input[type="tel"],
+	input[type="password"],
+	select,
+	textarea {
+		width          : 100%;
+		vertical-align : top;
+	}
+
+	> label:not(.checkbox-style) {
+		font-size       : $form-label-size;
+		font-weight     : $form-label-weight;
+		line-height     : 1.2;
+		display         : flex;
+		align-items     : center;
+		flex-flow       : row nowrap;
+		justify-content : space-between;
+		margin          : $form-label-margin;
+		cursor          : pointer;
+		color           : $form-label-color;
+
+		> span {
+			order : 0;
+		}
+
+		.error-message {
+			margin-top  : 0;
+			margin-left : 10px;
+
+			+ span {
+				color : var(--red);
+			}
+		}
+	}
+}
+
+.form__input {
+	position : relative;
+	z-index  : 1;
+}
+
+.form__group {
+
+
+	@media screen and (min-width : $break-table) {
+		display : flex;
+		gap     : 12px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		display : unset;
+	}
+
+	.form__row {
+
+		@media screen and (min-width : $break-table) {
+			width      : 50%;
+			margin-top : 0;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			width      : 100%;
+			margin-top : 12px;
+		}
+	}
+}
+
+.form__hint {
+	font-size   : $form-hint-size;
+	font-weight : $form-hint-weight;
+	font-style  : $form-hint-style;
+	position    : relative;
+	z-index     : 2;
+	margin      : $form-hint-margin;
+	color       : $form-hint-color;
+}
+
+.form__error {
+	font-size   : $form-error-size;
+	font-weight : $form-error-weight;
+	position    : relative;
+	z-index     : 3;
+	margin-top  : 3px;
+	color       : $form-error-color;
+}
+
+.form-password {
+	position : relative;
+
+	input[type="text"],
+	input[type="password"] {
+		position      : relative;
+		z-index       : 1;
+		padding-right : 50px;
+	}
+}
+
+.form-password__button {
+	position                    : absolute;
+	z-index                     : 10;
+	top                         : 0;
+	right                       : 0;
+	bottom                      : 0;
+	box-sizing                  : border-box;
+	width                       : 42px;
+	padding                     : 0;
+	cursor                      : pointer;
+	transition                  : opacity .3s ease;
+	vertical-align              : middle;
+	opacity                     : .3;
+	border                      : 0;
+	outline                     : 0;
+	background                  : transparent;
+	-webkit-tap-highlight-color : transparent;
+
+	i {
+		position       : relative;
+		z-index        : 1;
+		vertical-align : middle;
+	}
+
+	&:after {
+		content    : "";
+		position   : absolute;
+		z-index    : 10;
+		top        : 24px;
+		left       : 9px;
+		display    : block;
+		width      : 24px;
+		height     : 1px;
+		transition : opacity .3s ease;
+		transform  : rotate(-30deg);
+		border-top : 1px solid #FFF;
+		background : #000;
+	}
+
+	@media screen and (min-width : $break-table) {
+
+	}
+	@media screen and (min-width : $break-desktop) {
+		&:hover {
+			opacity : 1;
+		}
+	}
+
+	&.active {
+		opacity : 1;
+
+		&:after {
+			opacity : 0;
+		}
+	}
+}

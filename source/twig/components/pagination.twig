@@ -1,0 +1,19 @@
+<div class="pagination">
+	<ul class="pagination__list list-reset">
+		{% for item in pagination %}
+			<li class="pagination__item">
+				<a href="#" class="pagination__link">
+					{{ item.pag }}
+				</a>
+			</li>
+		{% endfor %}
+		<li class="pagination__item">
+			<a href="#" class="pagination__link active">
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M4.16732 10L15.834 10M15.834 10L10.834 5M15.834 10L10.834 15" stroke="white"
+					      stroke-width="1.40833" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+		</li>
+	</ul>
+</div>

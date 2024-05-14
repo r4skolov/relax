@@ -1,0 +1,245 @@
+{% extends "../template/layout.twig" %}
+{% block title %}Ткани{% endblock %}
+{% block page %}
+	{% include '../components/breadcrumbs.twig' with {
+		breadcrumbs:[
+			{
+				'link':'fabrics.html',
+				'name':'Ткани',
+				'active':true
+			}
+		]
+	} only %}
+	<section class="fabrics section-offset">
+		<div class="container">
+			<div class="fabrics__wrapper">
+				<h2 class="section-title fabrics__title">
+					Выберите оттенок ткани, чтобы создать уникальный и стильный интерьер
+				</h2>
+				<div class="tabs tabs--fabrics" data-tabs="wrapper">
+					<div class="tabs__head tabs__head--fabrics">
+						<button type="button" data-tabs="link" data-target="#id-1"
+						        class="tabs__button tabs__button--fabrics active">
+							Велюр Teddy
+						</button>
+						<button type="button" data-tabs="link" data-target="#id-2"
+						        class="tabs__button tabs__button--fabrics">
+							Велюр Ginger
+						</button>
+						<button type="button" data-tabs="link" data-target="#id-3"
+						        class="tabs__button tabs__button--fabrics">
+							Велюр Zizi
+						</button>
+						<button type="button" data-tabs="link" data-target="#id-4"
+						        class="tabs__button tabs__button--fabrics">
+							Велюр Nebby
+						</button>
+						<button type="button" data-tabs="link" data-target="#id-5"
+						        class="tabs__button tabs__button--fabrics">
+							Велюр Ness
+						</button>
+					</div>
+					<div data-tabs="item" id="id-1" class="tabs__content active">
+						<div class="fabrics__main">
+							<div class="fabrics__top">
+								<div class="fabrics__about">
+									<div class="fabrics__shield">
+										Теплый бархат в интерьере
+									</div>
+									<div class="fabrics__group">
+										<h3 class="fabrics__name">
+											Велюр Teddy
+										</h3>
+										<div class="fabrics__text">
+											<p>
+												Ткань обладает высокой прочностью и устойчивостью к износу благодаря
+												уникальному сочетанию лицевого слоя высокой плотности, среднего
+												каркасного слоя и объемной трикотажной подложки
+											</p>
+										</div>
+									</div>
+									<div class="fabrics__play">
+										<a href="https://youtu.be/e379lys7W-Y?si=yqIqVEhSLpcyke3P" class="glightbox">
+											<svg width="57" height="57" viewBox="0 0 57 57" fill="none"
+											     xmlns="http://www.w3.org/2000/svg">
+												<circle cx="28.6162" cy="28.2227" r="28" fill="white"/>
+												<path d="M37.1795 27.1045C38.0403 27.6015 38.0403 28.8439 37.1795 29.3408L24.2529 36.804C23.3921 37.301 22.3162 36.6798 22.3162 35.6859V20.7595C22.3162 19.7656 23.3921 19.1444 24.2529 19.6413L37.1795 27.1045Z"
+												      fill="#349FEC"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="fabrics__demo">
+									<picture>
+										<source media="(min-width:1024px)"
+										        srcset="images/fabrics/demo.webp 1x, images/fabrics/demo@2x.webp 1.3x"
+										        type="image/webp">
+										<source media="(min-width:1024px)"
+										        srcset="images/fabrics/demo.jpg 1x, images/fabrics/demo@2x.jpg 1.3x"
+										        type="image/jpg">
+										<source media="(min-width:768px)"
+										        srcset="images/fabrics/demo-tablet.webp 1x, images/fabrics/demo-tablet@2x.webp 1.3x"
+										        type="image/webp">
+										<source media="(min-width:768px)"
+										        srcset="images/fabrics/demo-tablet.jpg 1x, images/fabrics/demo-tablet@2x.jpg 1.3x"
+										        type="image/jpg">
+										<source srcset="images/fabrics/demo-mob.webp 1x, images/fabrics/demo-mob@2x.webp 1.3x"
+										        type="image/webp">
+										<source srcset="images/fabrics/demo-mob.jpg 1x, images/fabrics/demo-mob@2x.jpg 1.3x"
+										        type="image/jpg">
+										<img src="images/fabrics/demo-mob.jpg" alt=""
+										     loading="lazy">
+									</picture>
+								</div>
+							</div>
+							<div class="fabrics__grid">
+								{% include '../components/fabrics-colors.twig' with {
+									fabricsColor:[
+										{
+											'img':'images/fabrics/teddy-901',
+											'number':'Teddy 901',
+										},
+										{
+											'img':'images/fabrics/teddy-904',
+											'number':'Teddy 904',
+										},
+										{
+											'img':'images/fabrics/teddy-905',
+											'number':'Teddy 905',
+										},
+										{
+											'img':'images/fabrics/teddy-908',
+											'number':'Teddy 908',
+										},
+										{
+											'img':'images/fabrics/teddy-909',
+											'number':'Teddy 909',
+										},
+										{
+											'img':'images/fabrics/teddy-910',
+											'number':'Teddy 910',
+										},
+										{
+											'img':'images/fabrics/teddy-913',
+											'number':'Teddy 913',
+										},
+										{
+											'img':'images/fabrics/teddy-915',
+											'number':'Teddy 915',
+										},
+										{
+											'img':'images/fabrics/teddy-917',
+											'number':'Teddy 917',
+										},
+										{
+											'img':'images/fabrics/teddy-921',
+											'number':'Teddy 921',
+										},
+										{
+											'img':'images/fabrics/teddy-924',
+											'number':'Teddy 924',
+										},
+										{
+											'img':'images/fabrics/teddy-930',
+											'number':'Teddy 930',
+										},
+										{
+											'img':'images/fabrics/teddy-931',
+											'number':'Teddy 931',
+										},
+										{
+											'img':'images/fabrics/teddy-932',
+											'number':'Teddy 932',
+										},
+										{
+											'img':'images/fabrics/teddy-939',
+											'number':'Teddy 939',
+										},
+										{
+											'img':'images/fabrics/teddy-940',
+											'number':'Teddy 940',
+										},
+										{
+											'img':'images/fabrics/teddy-941',
+											'number':'Teddy 941',
+										},
+										{
+											'img':'images/fabrics/teddy-943',
+											'number':'Teddy 943',
+										},
+										{
+											'img':'images/fabrics/teddy-944',
+											'number':'Teddy 944',
+										},
+										{
+											'img':'images/fabrics/teddy-946',
+											'number':'Teddy 946',
+										},
+										{
+											'img':'images/fabrics/teddy-947',
+											'number':'Teddy 947',
+										},
+										{
+											'img':'images/fabrics/teddy-948',
+											'number':'Teddy 948',
+										},
+										{
+											'img':'images/fabrics/teddy-950',
+											'number':'Teddy 950',
+										},
+										{
+											'img':'images/fabrics/teddy-952',
+											'number':'Teddy 952',
+										},
+									]
+								} only %}
+							</div>
+						</div>
+						{% include '../components/pagination.twig' with {
+							pagination:[
+								{
+									'pag':'1'
+								},
+								{
+									'pag':'2'
+								},
+								{
+									'pag':'3'
+								},
+								{
+									'pag':'4'
+								},
+								{
+									'pag':'5'
+								},
+							]
+						} only %}
+					</div>
+					<div data-tabs="item" id="id-2" class="tabs__content">
+						content-2
+					</div>
+					<div data-tabs="item" id="id-3" class="tabs__content">
+						content-3
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include '../blocks/banner-form.twig' with {
+		class:'banner-form--fabrics',
+		bannerTitle:'Создайте комфортное спальное место с нашей кроватью',
+		bannerText:'Оставьте контактный номер телефона и мы свяжемся с вами для обсуждения деталей вашего заказа',
+		bannerBtn:'Оставить заявку',
+		bannerImg:'images/icon/banner-bg',
+		bannerWidth:'673',
+		bannerHeight:'473',
+		bannerId:'get-catalog'
+
+	} only %}
+
+{% endblock %}
+
+{% block scripts %}
+	<script src="js/glightbox.min.js"></script>
+{% endblock %}

@@ -1,0 +1,80 @@
+<ul class="nav__list list-reset">
+	<li{% if menuCatalog %} class="active"{% endif %}>
+		<a href="#catalog">
+			<span>Каталог</span>
+		</a>
+	</li>
+	<li{% if menuDelivery %} class="active"{% endif %}>
+		<a href="delivery.html">
+			<span>Доставка</span>
+		</a>
+	</li>
+	<li{% if menuReviews %} class="active"{% endif %}>
+		<a href="reviews.html">
+			<span>Отзывы</span>
+		</a>
+	</li>
+	<li class="submenu" data-dropdown="wrapper">
+		<button type="button" data-dropdown="button">
+			<span>О Кроватях</span>
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M12.5 9.16666L10 11.6667L7.5 9.16666" stroke="#111111" stroke-linecap="round"
+				      stroke-linejoin="round"/>
+			</svg>
+		</button>
+		<div class="submenu__wrapper" data-subdrop="wrapper">
+			<div class="submenu__main">
+				<ul class="list-reset">
+					<li>
+						<a class="submenu-link" href="legs.html">
+							<div class="submenu-link__img">
+								<picture>
+									<source srcset="images/icon/legs-link.webp 1x, images/icon/legs-link@2x.webp 1.3x"
+									        type="image/webp">
+									<source srcset="images/icon/legs-link.jpg 1x, images/icon/legs-link@2x.jpg 1.3x"
+									        type="image/jpg">
+									<img src="images/icon/legs-link.jpg" width="40" height="40" alt="" loading="lazy">
+								</picture>
+							</div>
+							<div class="submenu-link__wrap">
+								<div class="submenu-link__name">
+									Ножки
+								</div>
+								<div class="submenu-link__about">
+									Более 10 вариантов ножек
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a class="submenu-link" href="fabrics.html">
+							<div class="submenu-link__img">
+								<picture>
+									<source srcset="images/icon/fabrics-link.webp 1x, images/icon/fabrics-link@2x.webp 1.3x"
+									        type="image/webp">
+									<source srcset="images/icon/fabrics-link.jpg 1x, images/icon/fabrics-link@2x.jpg 1.3x"
+									        type="image/jpg">
+									<img src="images/icon/fabrics-link.jpg" width="40" height="40" alt=""
+									     loading="lazy">
+								</picture>
+							</div>
+							<div class="submenu-link__wrap">
+								<div class="submenu-link__name">
+									Ткани
+								</div>
+								<div class="submenu-link__about">
+									450+ оттенков и видов
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</li>
+	<li{% if menuContacts %} class="active"{% endif %}>
+		<a href="contacts.html">
+			<span>Контакты</span>
+		</a>
+	</li>
+</ul>

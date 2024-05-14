@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Отзывы</title>
+	<link rel="stylesheet" href="css/glightbox.css">
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<!--Logo-->
+					<a href="index.html" class="header__logo logo">
+						<img src="images/icon/logo.svg" alt="Relax" width="103" height="19">
+					</a>
+					<div class="header__panel">
+						<!-- Menu -->
+						<div class="header__menu" data-menu>
+							<div class="header__wrap">
+								<nav class="nav">
+									<ul class="nav__list list-reset">
+										<li>
+											<a href="#catalog">
+												<span>Каталог</span>
+											</a>
+										</li>
+										<li>
+											<a href="delivery.html">
+												<span>Доставка</span>
+											</a>
+										</li>
+										<li>
+											<a href="reviews.html">
+												<span>Отзывы</span>
+											</a>
+										</li>
+										<li class="submenu" data-dropdown="wrapper">
+											<button type="button" data-dropdown="button">
+												<span>О Кроватях</span>
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.5 9.16666L10 11.6667L7.5 9.16666" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+											<div class="submenu__wrapper" data-subdrop="wrapper">
+												<div class="submenu__main">
+													<ul class="list-reset">
+														<li>
+															<a class="submenu-link" href="legs.html">
+																<div class="submenu-link__img">
+																	<picture>
+																		<source srcset="images/icon/legs-link.webp 1x, images/icon/legs-link@2x.webp 1.3x" type="image/webp">
+																		<source srcset="images/icon/legs-link.jpg 1x, images/icon/legs-link@2x.jpg 1.3x" type="image/jpg">
+																		<img src="images/icon/legs-link.jpg" width="40" height="40" alt="" loading="lazy">
+																	</picture>
+																</div>
+																<div class="submenu-link__wrap">
+																	<div class="submenu-link__name">
+																		Ножки
+																	</div>
+																	<div class="submenu-link__about">
+																		Более 10 вариантов ножек
+																	</div>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a class="submenu-link" href="fabrics.html">
+																<div class="submenu-link__img">
+																	<picture>
+																		<source srcset="images/icon/fabrics-link.webp 1x, images/icon/fabrics-link@2x.webp 1.3x" type="image/webp">
+																		<source srcset="images/icon/fabrics-link.jpg 1x, images/icon/fabrics-link@2x.jpg 1.3x" type="image/jpg">
+																		<img src="images/icon/fabrics-link.jpg" width="40" height="40" alt="" loading="lazy">
+																	</picture>
+																</div>
+																<div class="submenu-link__wrap">
+																	<div class="submenu-link__name">
+																		Ткани
+																	</div>
+																	<div class="submenu-link__about">
+																		450+ оттенков и видов
+																	</div>
+																</div>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="contacts.html">
+												<span>Контакты</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<div class="header__buttons header__buttons--mobile">
+									<div class="header__location">
+										<button type="button" data-modal-open="city">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5 8.20963C5 11.6271 8.03179 14.4533 9.37373 15.5368C9.56579 15.6919 9.66296 15.7703 9.80625 15.8101C9.91782 15.8411 10.082 15.8411 10.1936 15.8101C10.3372 15.7703 10.4336 15.6926 10.6264 15.5369C11.9684 14.4534 15 11.6274 15 8.20994C15 6.91663 14.4732 5.67613 13.5356 4.76162C12.5979 3.84711 11.3262 3.33334 10.0001 3.33334C8.674 3.33334 7.40216 3.84719 6.46447 4.7617C5.52679 5.67621 5 6.91632 5 8.20963Z" stroke="#111111" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M8.57145 7.5596C8.57145 8.33763 9.21105 8.96835 10 8.96835C10.789 8.96835 11.4286 8.33763 11.4286 7.5596C11.4286 6.78156 10.789 6.15085 10 6.15085C9.21105 6.15085 8.57145 6.78156 8.57145 7.5596Z" stroke="#111111" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+											<span>Набережные челны</span>
+										</button>
+									</div>
+									<a class="header__phone" href="tel:79990000099">
+										<img src="images/icon/phone.svg" alt="" width="20" height="20">
+										<span>+7 (999) 000-00-99</span>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- Login -->
+						<div class="header__buttons header__buttons--desktop">
+							<div class="header__location">
+								<button type="button" data-modal-open="city">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5 8.20963C5 11.6271 8.03179 14.4533 9.37373 15.5368C9.56579 15.6919 9.66296 15.7703 9.80625 15.8101C9.91782 15.8411 10.082 15.8411 10.1936 15.8101C10.3372 15.7703 10.4336 15.6926 10.6264 15.5369C11.9684 14.4534 15 11.6274 15 8.20994C15 6.91663 14.4732 5.67613 13.5356 4.76162C12.5979 3.84711 11.3262 3.33334 10.0001 3.33334C8.674 3.33334 7.40216 3.84719 6.46447 4.7617C5.52679 5.67621 5 6.91632 5 8.20963Z" stroke="#111111" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M8.57145 7.5596C8.57145 8.33763 9.21105 8.96835 10 8.96835C10.789 8.96835 11.4286 8.33763 11.4286 7.5596C11.4286 6.78156 10.789 6.15085 10 6.15085C9.21105 6.15085 8.57145 6.78156 8.57145 7.5596Z" stroke="#111111" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span>Набережные челны</span>
+								</button>
+							</div>
+							<a class="header__phone" href="tel:79990000099">
+								<img src="images/icon/phone.svg" alt="" width="20" height="20">
+								<span>+7 (999) 000-00-99</span>
+							</a>
+							<button class="burger" aria-label="Open menu" aria-expanded="false" data-burger>
+								<span class="burger__line"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list list-reset">
+					<li class="breadcrumbs__item">
+						<a href="index.html" class="breadcrumbs__link">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="fabrics.html" class="breadcrumbs__link active">
+							Отзывы
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="reviews section-offset">
+			<div class="container">
+				<h2 class="section-title reviews__title">Отзывы</h2>
+				<div class="reviews__main">
+					<div class="reviews__left">
+						<div class="reviews__counter">
+							>
+							<div class="reviews__count number" data-goal="24" data-speed="10" data-step="0.3">
+								0
+							</div>
+							&nbsp;000
+						</div>
+						<div class="reviews__text">
+							<p>
+								Довольных покупателей на разных площадках
+							</p>
+						</div>
+					</div>
+					<div class="reviews__right">
+						<ul class="reviews-company list-reset">
+							<li class="reviews-company__item">
+								<a href="#" class="reviews-company__link">
+									<div class="reviews-company__icon">
+										<img src="images/home/home-reviews/2gis.svg" alt="2GIS" width="48" height="48" loading="lazy">
+									</div>
+									<div class="reviews-company__wrap">
+										<div class="reviews-company__name">
+											2GIS
+										</div>
+										<div class="reviews-company__rating">
+											5,0
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="reviews-company__item">
+								<a href="#" class="reviews-company__link">
+									<div class="reviews-company__icon">
+										<img src="images/home/home-reviews/yandex.svg" alt="Яндекс" width="48" height="48" loading="lazy">
+									</div>
+									<div class="reviews-company__wrap">
+										<div class="reviews-company__name">
+											Яндекс
+										</div>
+										<div class="reviews-company__rating">
+											5,0
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="reviews-company__item">
+								<a href="#" class="reviews-company__link">
+									<div class="reviews-company__icon">
+										<img src="images/home/home-reviews/avito.svg" alt="Avito" width="48" height="48" loading="lazy">
+									</div>
+									<div class="reviews-company__wrap">
+										<div class="reviews-company__name">
+											Avito
+										</div>
+										<div class="reviews-company__rating">
+											5,0
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="reviews-company__item">
+								<a href="#" class="reviews-company__link">
+									<div class="reviews-company__icon">
+										<img src="images/home/home-reviews/ozon.svg" alt="Ozon.ru" width="48" height="48" loading="lazy">
+									</div>
+									<div class="reviews-company__wrap">
+										<div class="reviews-company__name">
+											Ozon.ru
+										</div>
+										<div class="reviews-company__rating">
+											5,0
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="reviews-company__item">
+								<a href="#" class="reviews-company__link">
+									<div class="reviews-company__icon">
+										<img src="images/home/home-reviews/otzovik.svg" alt="Отзовик" width="48" height="48" loading="lazy">
+									</div>
+									<div class="reviews-company__wrap">
+										<div class="reviews-company__name">
+											Отзовик
+										</div>
+										<div class="reviews-company__rating">
+											5,0
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="reviews-company__item">
+								<a href="#" class="reviews-company__link">
+									<div class="reviews-company__icon">
+										<img src="images/home/home-reviews/zoon.svg" alt="Zoon" width="48" height="48" loading="lazy">
+									</div>
+									<div class="reviews-company__wrap">
+										<div class="reviews-company__name">
+											Zoon
+										</div>
+										<div class="reviews-company__rating">
+											5,0
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="reviews__grid">
+					<div class="reviews__item">
+						<div class="video-reviews video-reviews--page">
+							<a href="https://youtu.be/e379lys7W-Y?si=yqIqVEhSLpcyke3P" class="video-reviews__content glightbox">
+								<picture>
+									<source srcset="images/home/home-reviews/video-reviews.webp 1x, images/home/home-reviews/video-reviews@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/home-reviews/video-reviews.jpg 1x, images/home/home-reviews/video-reviews@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/home/home-reviews/video-reviews.jpg" width="435" height="327" alt="" loading="lazy">
+								</picture>
+								<div class="video-btn">
+									<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="49.5" cy="49.5" r="49.5" fill="white" />
+										<path d="M64.9002 46.4948C66.3669 47.3416 66.3669 49.4586 64.9002 50.3054L41.8002 63.6421C40.3335 64.4889 38.5002 63.4305 38.5002 61.7369V35.0633C38.5002 33.3697 40.3335 32.3113 41.8002 33.1581L64.9002 46.4948Z" fill="#349FEC" />
+									</svg>
+								</div>
+							</a>
+							<div class="video-reviews__main">
+								<ul class="video-reviews__rating list-reset">
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+								</ul>
+								<div class="video-reviews__name">
+									Данила Фирсов
+								</div>
+								<div class="video-reviews__text">
+									<p>
+										Прекрасная кровать, отличного качества. В интерьере смотрится очень красиво. Есть
+										удобные
+										большие бельевые ящики, они не глубокие, но туда все помещается без проблем, очень
+										хороший и
+										плавный выдвижной механизм
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="video-reviews video-reviews--page">
+							<a href="https://youtu.be/e379lys7W-Y?si=yqIqVEhSLpcyke3P" class="video-reviews__content glightbox">
+								<picture>
+									<source srcset="images/home/home-reviews/video-reviews.webp 1x, images/home/home-reviews/video-reviews@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/home-reviews/video-reviews.jpg 1x, images/home/home-reviews/video-reviews@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/home/home-reviews/video-reviews.jpg" width="435" height="327" alt="" loading="lazy">
+								</picture>
+								<div class="video-btn">
+									<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="49.5" cy="49.5" r="49.5" fill="white" />
+										<path d="M64.9002 46.4948C66.3669 47.3416 66.3669 49.4586 64.9002 50.3054L41.8002 63.6421C40.3335 64.4889 38.5002 63.4305 38.5002 61.7369V35.0633C38.5002 33.3697 40.3335 32.3113 41.8002 33.1581L64.9002 46.4948Z" fill="#349FEC" />
+									</svg>
+								</div>
+							</a>
+							<div class="video-reviews__main">
+								<ul class="video-reviews__rating list-reset">
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+								</ul>
+								<div class="video-reviews__name">
+									Данила Фирсов
+								</div>
+								<div class="video-reviews__text">
+									<p>
+										Прекрасная кровать, отличного качества. В интерьере смотрится очень красиво. Есть
+										удобные
+										большие бельевые ящики, они не глубокие, но туда все помещается без проблем, очень
+										хороший и
+										плавный выдвижной механизм
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="video-reviews video-reviews--page">
+							<a href="https://youtu.be/e379lys7W-Y?si=yqIqVEhSLpcyke3P" class="video-reviews__content glightbox">
+								<picture>
+									<source srcset="images/home/home-reviews/video-reviews.webp 1x, images/home/home-reviews/video-reviews@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/home-reviews/video-reviews.jpg 1x, images/home/home-reviews/video-reviews@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/home/home-reviews/video-reviews.jpg" width="435" height="327" alt="" loading="lazy">
+								</picture>
+								<div class="video-btn">
+									<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="49.5" cy="49.5" r="49.5" fill="white" />
+										<path d="M64.9002 46.4948C66.3669 47.3416 66.3669 49.4586 64.9002 50.3054L41.8002 63.6421C40.3335 64.4889 38.5002 63.4305 38.5002 61.7369V35.0633C38.5002 33.3697 40.3335 32.3113 41.8002 33.1581L64.9002 46.4948Z" fill="#349FEC" />
+									</svg>
+								</div>
+							</a>
+							<div class="video-reviews__main">
+								<ul class="video-reviews__rating list-reset">
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+								</ul>
+								<div class="video-reviews__name">
+									Данила Фирсов
+								</div>
+								<div class="video-reviews__text">
+									<p>
+										Прекрасная кровать, отличного качества. В интерьере смотрится очень красиво. Есть
+										удобные
+										большие бельевые ящики, они не глубокие, но туда все помещается без проблем, очень
+										хороший и
+										плавный выдвижной механизм
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="video-reviews video-reviews--page">
+							<a href="https://youtu.be/e379lys7W-Y?si=yqIqVEhSLpcyke3P" class="video-reviews__content glightbox">
+								<picture>
+									<source srcset="images/home/home-reviews/video-reviews.webp 1x, images/home/home-reviews/video-reviews@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/home-reviews/video-reviews.jpg 1x, images/home/home-reviews/video-reviews@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/home/home-reviews/video-reviews.jpg" width="435" height="327" alt="" loading="lazy">
+								</picture>
+								<div class="video-btn">
+									<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="49.5" cy="49.5" r="49.5" fill="white" />
+										<path d="M64.9002 46.4948C66.3669 47.3416 66.3669 49.4586 64.9002 50.3054L41.8002 63.6421C40.3335 64.4889 38.5002 63.4305 38.5002 61.7369V35.0633C38.5002 33.3697 40.3335 32.3113 41.8002 33.1581L64.9002 46.4948Z" fill="#349FEC" />
+									</svg>
+								</div>
+							</a>
+							<div class="video-reviews__main">
+								<ul class="video-reviews__rating list-reset">
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+									<li><img src="images/icon/star.svg" alt="" width="16" height="16" loading="lazy"></li>
+								</ul>
+								<div class="video-reviews__name">
+									Данила Фирсов
+								</div>
+								<div class="video-reviews__text">
+									<p>
+										Прекрасная кровать, отличного качества. В интерьере смотрится очень красиво. Есть
+										удобные
+										большие бельевые ящики, они не глубокие, но туда все помещается без проблем, очень
+										хороший и
+										плавный выдвижной механизм
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<ul class="pagination__list list-reset">
+						<li class="pagination__item">
+							<a href="#" class="pagination__link">
+								1
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a href="#" class="pagination__link">
+								2
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a href="#" class="pagination__link">
+								3
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a href="#" class="pagination__link">
+								4
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a href="#" class="pagination__link">
+								5
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a href="#" class="pagination__link active">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.16732 10L15.834 10M15.834 10L10.834 5M15.834 10L10.834 15" stroke="white" stroke-width="1.40833" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<section class="banner-form banner-form--fabrics section-offset">
+			<div class="container">
+				<div class="banner-form__wrapper">
+					<div class="banner-form__left">
+						<h2 class="banner-form__title">
+							Создайте комфортное спальное место с нашей кроватью
+						</h2>
+						<div class="banner-form__text">
+							<p>
+								Оставьте контактный номер телефона и мы свяжемся с вами для обсуждения деталей вашего заказа
+							</p>
+						</div>
+						<div class="banner-form__form">
+							<form class="form form--catalog" action="#" id="get-catalog" data-form-validation="wrapper" data-request="contactsForm::onFormSubmit" novalidate="novalidate">
+								<div class="form__row">
+									<label for="phone-banner">
+										<input type="tel" id="phone-banner" name="phone-banner" class="form__input form__input--phone" placeholder="+7 (" aria-label="Телефон">
+									</label>
+								</div>
+								<button type="button" class="b-btn b-btn--primary disabled" data-btn="button">
+									<span>Оставить заявку</span>
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.3335 8.3479H12.6668M12.6668 8.3479L8.66683 4.3479M12.6668 8.3479L8.66683 12.3479" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</form>
+							<div class="banner-form__bottom">
+								Нажимая кнопку «Оставить заявку», вы соглашаетесь с условиями <a href="privacy-policy.html">политики
+									конфиденциальности</a>
+							</div>
+						</div>
+					</div>
+					<div class="banner-form__img">
+						<picture>
+							<source srcset="images/icon/banner-bg.webp 1x,images/icon/banner-bg@2x.webp 1.3x" type="image/webp">
+							<source srcset="images/icon/banner-bg.png 1x, images/icon/banner-bg@2x.png 1.3x" type="image/png">
+							<img src="images/icon/banner-bg.png" width="673" height="473" alt="" loading="lazy">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__grid">
+					<div class="footer__item">
+						<div class="footer__name">
+							Телефон
+						</div>
+						<a href="+7927243-33-55" class="footer__num">
+							+7 (927) 243-33-55
+						</a>
+					</div>
+					<div class="footer__item">
+						<div class="footer__name">
+							Мессенджеры
+						</div>
+						<div class="s-block">
+							<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+								<img src="images/icon/tg.svg" width="48" height="48" alt="">
+							</a>
+							<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+								<img src="images/icon/wa.svg" width="48" height="48" alt="">
+							</a>
+							<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+								<img src="images/icon/viber.svg" width="48" height="48" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="footer__form">
+						<div class="footer__title">
+							Остались вопросы? Мы вам позвоним!
+						</div>
+						<form action="#" class="form form--footer">
+							<div class="form__row">
+								<label for="phone-footer" class="form__label">
+									<input type="tel" id="phone-footer" name="phone-footer" class="form__input form__input--phone" placeholder="+7 (" aria-label="Телефон">
+								</label>
+							</div>
+							<button type="button" class="b-btn b-btn--primary disabled" data-btn="button">
+								<span>Оставить заявку</span>
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.3335 8H12.6668M12.6668 8L8.66683 4M12.6668 8L8.66683 12" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__link">
+						2024© Relax Mebel
+					</div>
+					<a href="privacy-policy.html" class="footer__link">
+						Политика конфиденциальности
+					</a>
+					<a href="#" class="footer__link">
+						Сделано в Rhino
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="city" class="modal" aria-hidden="true">
+		<div tabindex="1" class="modal__overlay" data-micromodal-close>
+			<div role="dialog" class="modal__container modal__container--city" data-modal-close="city">
+				<div class="modal__content modal__content--city active">
+					<div class="city">
+						<div class="city__head">
+							<div class="city__current">
+								<svg width="20" height="29" viewBox="0 0 20 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2.73438 11.9039C2.73438 16.8592 7.13938 20.9571 9.08915 22.5283C9.36819 22.7531 9.50939 22.8669 9.71757 22.9246C9.87968 22.9695 10.1183 22.9695 10.2804 22.9246C10.4889 22.8668 10.6291 22.7541 10.9092 22.5284C12.859 20.9573 17.2638 16.8597 17.2638 11.9043C17.2638 10.029 16.4984 8.23029 15.136 6.90425C13.7736 5.5782 11.9259 4.83324 9.99921 4.83324C8.07248 4.83324 6.22457 5.57832 4.86217 6.90436C3.49977 8.2304 2.73438 10.0286 2.73438 11.9039Z" stroke="#333333" stroke-width="2.26923" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M7.92348 10.9613C7.92348 12.0895 8.85278 13.004 9.99912 13.004C11.1455 13.004 12.0748 12.0895 12.0748 10.9613C12.0748 9.83316 11.1455 8.91862 9.99912 8.91862C8.85278 8.91862 7.92348 9.83316 7.92348 10.9613Z" stroke="#333333" stroke-width="2.26923" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								<span>Вы из Москвы?</span>
+							</div>
+						</div>
+						<div class="city__wrap">
+							<button type="button" class="b-btn b-btn--primary" data-modal-close="city">
+								Да, верно
+							</button>
+							<button type="button" class="b-btn b-btn--secondary">
+								Выбрать другой город
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="modal__content modal__content--cityList">
+					<div class="city">
+						<div class="city__head">
+							<div class="city__current">
+								<svg width="20" height="29" viewBox="0 0 20 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2.73438 11.9039C2.73438 16.8592 7.13938 20.9571 9.08915 22.5283C9.36819 22.7531 9.50939 22.8669 9.71757 22.9246C9.87968 22.9695 10.1183 22.9695 10.2804 22.9246C10.4889 22.8668 10.6291 22.7541 10.9092 22.5284C12.859 20.9573 17.2638 16.8597 17.2638 11.9043C17.2638 10.029 16.4984 8.23029 15.136 6.90425C13.7736 5.5782 11.9259 4.83324 9.99921 4.83324C8.07248 4.83324 6.22457 5.57832 4.86217 6.90436C3.49977 8.2304 2.73438 10.0286 2.73438 11.9039Z" stroke="#333333" stroke-width="2.26923" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M7.92348 10.9613C7.92348 12.0895 8.85278 13.004 9.99912 13.004C11.1455 13.004 12.0748 12.0895 12.0748 10.9613C12.0748 9.83316 11.1455 8.91862 9.99912 8.91862C8.85278 8.91862 7.92348 9.83316 7.92348 10.9613Z" stroke="#333333" stroke-width="2.26923" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								<span>Выберите город</span>
+							</div>
+							<button type="button" class="modal__close js-modal-close">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.4999 14.4999L8 8M8 8L1.5 1.5M8 8L14.5 1.5M8 8L1.5 14.5" stroke="#7D7D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+						</div>
+						<div class="city__group">
+							<ul class="city__list list-reset">
+								<li class="city__item">
+									<button type="button">
+										Москва
+									</button>
+								</li>
+								<li class="city__item">
+									<button type="button">
+										Нижний Новгород
+									</button>
+								</li>
+								<li class="city__item">
+									<button type="button">
+										Набережные Челны
+									</button>
+								</li>
+							</ul>
+							<ul class="city__list list-reset">
+								<li class="city__item">
+									<button type="button">
+										Казань
+									</button>
+								</li>
+								<li class="city__item">
+									<button type="button">
+										Йошкар-Ола
+									</button>
+								</li>
+								<li class="city__item">
+									<button type="button">
+										Чебоксары
+									</button>
+								</li>
+							</ul>
+							<ul class="city__list list-reset">
+								<li class="city__item">
+									<button type="button">
+										Тольятти
+									</button>
+								</li>
+								<li class="city__item">
+									<button type="button">
+										Ульяновск
+									</button>
+								</li>
+								<li class="city__item">
+									<button type="button">
+										Самара
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class=" modal__bg
+						" aria-hidden="true" data-modal-close="city">
+			</div>
+		</div>
+	</div>
+
+	<div id="cart" class="modal" aria-hidden="true">
+		<div tabindex="1" class="modal__overlay" data-micromodal-close>
+			<div role="dialog" class="modal__container modal__container--cart" data-modal-close="cart">
+				<button type="button" class="modal__close" data-modal-close="cart">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16.9999 16.9999L9 9M9 9L1 1M9 9L17 1M9 9L1 17" stroke="#7D7D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<div class="modal__main">
+					<div class="cart">
+						<div class="cart__top">
+							<h4 class="cart__title">
+								Ваш заказ
+							</h4>
+						</div>
+						<div class="cart__body">
+							<div class="cart-item">
+								<div class="cart-item__left">
+									<div class="cart-item__img">
+										<picture>
+											<source srcset="images/product/product-1.webp 1x, images/product/product-1@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/product/product-1.jpg 1x, images/product/product-1@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/product/product-1.jpg" alt="" loading="lazy">
+										</picture>
+									</div>
+									<div class="cart-item__about">
+										<h3 class="cart-item__title">
+											Кровать Tiffany
+										</h3>
+										<ul class="cart-item__options list-reset">
+											<li>
+												Размер: 90х200
+											</li>
+											<li>
+												Подъемный механизм: Да
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="cart-item__right">
+									<div class="cart-item__price">
+										29 990₽
+									</div>
+									<button type="button" class="cart-item__delete">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6654 8.33333V14.1667M8.33203 8.33333L8.33203 14.1667M3.33203 5H16.6654M14.9987 5V14.8333C14.9987 15.7668 14.9989 16.2335 14.8172 16.59C14.6574 16.9036 14.4021 17.1585 14.0885 17.3183C13.732 17.5 13.2656 17.5 12.3322 17.5H7.66553C6.73211 17.5 6.26505 17.5 5.90853 17.3183C5.59493 17.1585 5.34014 16.9036 5.18035 16.59C4.9987 16.2335 4.9987 15.7668 4.9987 14.8333V5H14.9987ZM13.332 5H6.66536C6.66536 4.22343 6.66536 3.83513 6.79223 3.52885C6.96139 3.12047 7.28563 2.79602 7.69401 2.62687C8.0003 2.5 8.3888 2.5 9.16536 2.5H10.832C11.6086 2.5 11.9969 2.5 12.3032 2.62687C12.7116 2.79602 13.0359 3.12047 13.2051 3.52885C13.3319 3.83513 13.332 4.22343 13.332 5Z" stroke="#349FEC" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="cart__footer">
+								<div class="cart__total">
+									Итого:
+								</div>
+								<div class="cart__price">
+									29 990₽
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-form">
+						<h2 class="modal-form__title">
+							Оставьте свои контактные данные
+						</h2>
+						<div class="modal-form__text">
+							В ближайшее время наш менеджер свяжется с вами для подтверждения заказа
+						</div>
+						<form action="#" class="form form--modal">
+							<div class="form__group">
+								<div class="form__row">
+									<label for="name-cart">
+										<input type="text" id="name-cart" class="form__input" placeholder="Имя">
+									</label>
+								</div>
+								<div class="form__row">
+									<label for="phone">
+										<input type="tel" id="phone" name="phone-cart" class="form__input form__input--phone" placeholder="+7 (" aria-label="Телефон">
+									</label>
+								</div>
+							</div>
+							<div class="form__row">
+								<label for="checkbox-cart" class="checkbox-style">
+									<input type="checkbox" name="checkbox-cart" id="checkbox-cart">
+									<span>Я соглашаюсь с условиями <a href="privacy-policy.html">политики конфиденциальности</a></span>
+								</label>
+							</div>
+							<button type="button" class="b-btn b-btn--primary disabled" data-btn="button">
+								Заказать
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal__bg" aria-hidden="true" data-modal-close="cart"></div>
+		</div>
+	</div>
+
+	<div id="catalog-modal" class="modal" aria-hidden="true">
+		<div tabindex="1" class="modal__overlay" data-micromodal-close>
+			<div role="dialog" class="modal__container modal__container--cart" data-modal-close="catalog-modal">
+				<button type="button" class="modal__close" data-modal-close="cart">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16.9999 16.9999L9 9M9 9L1 1M9 9L17 1M9 9L1 17" stroke="#7D7D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<div class="modal__main">
+					<div class="modal-form modal-form--catalog">
+						<h2 class="modal-form__title">
+							Получите полный каталог моделей
+						</h2>
+						<div class="modal-form__text">
+							Оставьте контактный номер телефона и мы отправим полный каталог из 40 моделей кроватей на
+							WhatsApp
+						</div>
+						<form action="#" class="form form--modal">
+							<div class="form__group">
+								<div class="form__row">
+									<label for="name-catalog">
+										<input type="text" id="name-catalog" class="form__input" placeholder="Имя">
+									</label>
+								</div>
+								<div class="form__row">
+									<label for="phone-catalog">
+										<input type="tel" id="phone-catalog" name="phone-catalog" class="form__input form__input--phone" placeholder="+7 (" aria-label="Телефон">
+									</label>
+								</div>
+							</div>
+							<div class="form__row">
+								<label for="checkbox-catalog" class="checkbox-style">
+									<input type="checkbox" name="checkbox-catalog" id="checkbox-catalog">
+									<span>Я соглашаюсь с условиями <a href="privacy-policy.html">политики конфиденциальности</a></span>
+								</label>
+							</div>
+							<button type="button" class="b-btn b-btn--primary disabled" data-btn="button">
+								Оставить заявку
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal__bg" aria-hidden="true" data-modal-close="cart"></div>
+		</div>
+	</div>
+
+	<div id="fabrics" class="modal" aria-hidden="true">
+		<div tabindex="1" class="modal__overlay" data-micromodal-close>
+			<div role="dialog" class="modal__container modal__container--cart" data-modal-close="fabrics">
+				<button type="button" class="modal__close" data-modal-close="cart">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16.9999 16.9999L9 9M9 9L1 1M9 9L17 1M9 9L1 17" stroke="#7D7D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<div class="modal__main">
+					<div class="modal-form modal-form--fabrics">
+						<h2 class="modal-form__title">
+							Понравился вариант ткани?
+						</h2>
+						<div class="modal-form__text">
+							Оставьте контактные данные и мы поможем с выбором оттенка для кровати
+						</div>
+						<form action="#" class="form form--modal">
+							<div class="form__group">
+								<div class="form__row">
+									<label for="name-fabrics">
+										<input type="text" id="name-fabrics" class="form__input" placeholder="Имя">
+									</label>
+								</div>
+								<div class="form__row">
+									<label for="phone-fabrics">
+										<input type="tel" id="phone-fabrics" name="phone-fabrics" class="form__input form__input--phone" placeholder="+7 (" aria-label="Телефон">
+									</label>
+								</div>
+							</div>
+							<div class="form__row">
+								<label for="checkbox-fabrics" class="checkbox-style">
+									<input type="checkbox" name="checkbox-fabrics" id="checkbox-fabrics">
+									<span>Я соглашаюсь с условиями <a href="privacy-policy.html">политики конфиденциальности</a></span>
+								</label>
+							</div>
+							<button type="button" class="b-btn b-btn--primary disabled" data-btn="button">
+								Оставить заявку
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal__bg" aria-hidden="true" data-modal-close="cart"></div>
+		</div>
+	</div>
+
+	<div id="default" class="modal" aria-hidden="true">
+		<div tabindex="1" class="modal__overlay" data-micromodal-close>
+			<div role="dialog" class="modal__container modal__container--cart" data-modal-close="default">
+				<button type="button" class="modal__close" data-modal-close="cart">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16.9999 16.9999L9 9M9 9L1 1M9 9L17 1M9 9L1 17" stroke="#7D7D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<div class="modal__main">
+					<div class="modal-form modal-form--default">
+						<h2 class="modal-form__title">
+							Оставьте заявку
+						</h2>
+						<div class="modal-form__text">
+							Оставьте контактные данные и наш менеджер свяжется с вами в ближайшее время
+						</div>
+						<form action="#" class="form form--modal">
+							<div class="form__group">
+								<div class="form__row">
+									<label for="name-default">
+										<input type="text" id="name-default" class="form__input" placeholder="Имя">
+									</label>
+								</div>
+								<div class="form__row">
+									<label for="phone-default">
+										<input type="tel" id="phone-default" name="phone-default" class="form__input form__input--phone" placeholder="+7 (" aria-label="Телефон">
+									</label>
+								</div>
+							</div>
+							<div class="form__row">
+								<label for="checkbox-default" class="checkbox-style">
+									<input type="checkbox" name="checkbox-default" id="checkbox-default">
+									<span>Я соглашаюсь с условиями <a href="privacy-policy.html">политики конфиденциальности</a></span>
+								</label>
+							</div>
+							<button type="button" class="b-btn b-btn--primary disabled" data-btn="button">
+								Оставить заявку
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal__bg" aria-hidden="true" data-modal-close="cart"></div>
+		</div>
+	</div>
+
+	<div id="successfull" class="modal" aria-hidden="true">
+		<div tabindex="1" class="modal__overlay" data-micromodal-close>
+			<div role="dialog" class="modal__container modal__container--cart" data-modal-close="cart">
+				<button type="button" class="modal__close" data-modal-close="successfull">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16.9999 16.9999L9 9M9 9L1 1M9 9L17 1M9 9L1 17" stroke="#7D7D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<div class="modal__main">
+					<div class="done">
+						<div class="done__img">
+							<img src="images/icon/done-icon.svg" width="45" height="45" alt="">
+						</div>
+						<div class="done__title">
+							Спасибо, данные успешно отправлены!
+						</div>
+						<div class="done__text">
+							В ближайшее время наш менеджер свяжется с вами
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal__bg" aria-hidden="true" data-modal-close="cart"></div>
+		</div>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<section class="hero section-offset">
+	<div class="container">
+		<div class="hero__wrapper">
+			<div class="hero__left">
+				{% if heroDate %}
+					<div class="hero__date">
+						{{ heroDate }}
+					</div>
+				{% endif %}
+				<div class="hero__wrap">
+					<h1 class="hero__title">
+						{{ heroTitle|raw }}
+					</h1>
+					<div class="hero__group">
+						<div class="hero__text">
+							<p>
+								{{ heroText }}
+							</p>
+						</div>
+						<a href="#catalog" class="b-btn b-btn--primary">
+							<span>Перейти в каталог</span>
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+							     xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.3335 8H12.6668M12.6668 8L8.66683 4M12.6668 8L8.66683 12" stroke="white"
+								      stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="hero__slider" data-slider="slider-hero" data-anim="hero">
+				<div class="swiper swiper--hero">
+					<div class="swiper-wrapper">
+						{% for item in heroSlides %}
+							<div class="swiper-slide">
+								<picture>
+									<source media="(min-width:1199px)"
+									        srcset="images/home/hero/{{ item.img }}.webp 1x, images/home/hero/{{ item.img }}@2x.webp 1.3x"
+									        type="image/webp">
+									<source media="(min-width:1199px)"
+									        srcset="images/home/hero/{{ item.img }}.jpg 1x, images/home/hero/{{ item.img }}@2x.jpg 1.3x"
+									        type="image/jpg">
+									<source media="(min-width:767px)"
+									        srcset="images/home/hero/{{ item.img }}-tablet.webp 1x, images/home/hero/{{ item.img }}-tablet@2x.webp 1.3x"
+									        type="image/webp">
+									<source media="(min-width:767px)"
+									        srcset="images/home/hero/{{ item.img }}-tablet.jpg 1x, images/home/hero/{{ item.img }}-tablet@2x.jpg 1.3x"
+									        type="image/jpg">
+									<source srcset="images/home/hero/{{ item.img }}-mob.webp 1x, images/home/hero/{{ item.img }}-mob@2x.webp 1.3x"
+									        type="image/webp">
+									<source srcset="images/home/hero/{{ item.img }}-mob.jpg 1x, images/home/hero/{{ item.img }}-mob@2x.jpg 1.3x"
+									        type="image/jpg">
+									<img src="images/home/hero/{{ item.img }}-mob.jpg" width="330" height="188" alt=""
+									     loading="lazy">
+								</picture>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<div class="hero__right">
+				{% for item in heroItems %}
+					<div class="hero-item" data-anim="hero">
+						<img src="{{ item.icon }}" alt="{{ item.alt }}" width="36" height="36">
+						<div class="hero-item__text">
+							{{ item.text|raw }}
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>

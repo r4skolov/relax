@@ -1,0 +1,20 @@
+<div class="delivery section-offset">
+	<div class="container">
+		<h2 class="section-title delivery__title">
+			{{ deliveryTitle }}
+		</h2>
+		<div class="delivery__grid">
+			{% for item in delivery %}
+				<div class="delivery__item">
+					<h3 class="delivery__name">
+						{{ item.name }}
+					</h3>
+					<div class="delivery__text">
+						{{ item.text|raw }}
+					</div>
+
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

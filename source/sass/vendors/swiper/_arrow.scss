@@ -1,0 +1,78 @@
+@at-root {
+	:root {
+		--swiper-navigation-size         : 48px;
+		--swiper-navigation-top-offset   : 50%;
+		--swiper-navigation-sides-offset : 10px;
+		--swiper-navigation-color        : var(--swiper-theme-color);
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	position                    : absolute;
+	z-index                     : 10;
+	top                         : 50%;
+	display                     : flex;
+	align-items                 : center;
+	justify-content             : center;
+	box-sizing                  : border-box;
+	width                       : 48px;
+	height                      : var(--swiper-navigation-size);
+	margin-top                  : calc(10px - (var(--swiper-navigation-size) / 2));
+	padding                     : 0;
+	cursor                      : pointer;
+	color                       : var(--swiper-navigation-color, var(--swiper-theme-color));
+	border                      : 0;
+	outline                     : 0;
+	background                  : transparent;
+	-webkit-tap-highlight-color : transparent;
+	border-radius               : 100%;
+	overflow                    : hidden;
+
+	&.swiper-button-disabled {
+		cursor         : auto;
+		pointer-events : none;
+	}
+
+	&.swiper-button-hidden {
+		cursor         : auto;
+		pointer-events : none;
+		opacity        : 0;
+	}
+
+	.swiper-navigation-disabled & {
+		display : none !important;
+	}
+
+	svg {
+		width            : 16px;
+		height           : 16px;
+		transform-origin : center;
+		object-fit       : contain;
+	}
+
+	.swiper-rtl & svg {
+		transform : rotate(180deg);
+	}
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+	right : auto;
+	left  : -24px;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+	right : -24px;
+	left  : auto;
+}
+
+.swiper-button-lock {
+	display : none;
+}
+
+.swiper-button {
+	background-color : var(--blue-color);
+	cursor           : pointer;
+}

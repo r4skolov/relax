@@ -1,0 +1,135 @@
+
+.home-reviews__top {
+	background-color : var(--background-color);
+	padding          : 36px 24px;
+	border-radius    : var(--border-radius-big);
+	margin-bottom    : 12px;
+
+	@media screen and (min-width : $break-table) {
+		padding       : 48px 28px 28px 48px;
+		margin-bottom : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		padding       : 48px 28px 28px 28px;
+		margin-bottom : 12px;
+	}
+}
+
+.home-reviews__title {
+	text-align    : center;
+	margin-bottom : 20px;
+
+	@media screen and (min-width : $break-table) {
+		margin-bottom : 40px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.review__wrapper {
+	margin : 0 -30px;
+
+	@media screen and (min-width : $break-table) {
+		margin : 0 -22px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		margin : 0;
+	}
+}
+
+
+.reviews-company {
+	display               : grid;
+	grid-template-columns : repeat(6, 1fr);
+	grid-gap              : 8px;
+}
+
+.reviews-company__item {
+	grid-column : 3 span;
+
+	@media screen and (min-width : $break-table) {
+		grid-column : 2 span;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		grid-column : 1 span;
+	}
+}
+
+.reviews-company__link {
+	display          : flex;
+	align-items      : center;
+	padding          : 8px 8px;
+	border-radius    : var(--border-radius-md);
+	background-color : var(--white-color);
+	gap              : 8px;
+
+	@media screen and (min-width : $break-table) {
+		padding : 12px 12px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.reviews-company__icon {
+	border-radius : 100%;
+	overflow      : hidden;
+}
+
+.reviews-company__name {
+	font-weight   : 400;
+	font-size     : 14px;
+	line-height   : 130%;
+	color         : var(--black-color);
+	margin-bottom : 4px;
+
+	@media screen and (min-width : $break-table) {
+		font-size : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.reviews-company__rating {
+	font-weight : 500;
+	font-size   : 14px;
+	line-height : 130%;
+	color       : var(--black-color);
+
+	@media screen and (min-width : $break-table) {
+		font-size : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+
+	&:after {
+		content           : "";
+		display           : inline-block;
+		background-image  : url("../images/icon/star.svg");
+		width             : 16px;
+		height            : 16px;
+		background-repeat : no-repeat;
+		background-size   : cover;
+	}
+}
+
+.home-reviews__wrapper {
+	margin : 0 -15px;
+	@media screen and (min-width : $break-table) {
+		margin : 0 -22px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		margin : 0;
+	}
+}

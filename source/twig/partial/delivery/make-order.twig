@@ -1,0 +1,45 @@
+<section class="make-order section-offset">
+	<div class="container">
+		<h2 class="section-title make-order__title">
+			{{ makeTitle }}
+		</h2>
+		<div class="make-order__wrapper">
+			<div class="make-order__img">
+				<picture>
+					<source media="(min-width:1200px)"
+					        srcset="images/delivery/delivery.webp 1x, images/delivery/delivery@2x.webp 1.3x"
+					        type="image/webp">
+					<source media="(min-width:1200px)"
+					        srcset="images/delivery/delivery.jpg 1x, images/delivery/delivery@2x.jpg 1.3x"
+					        type="image/jpg">
+					<source media="(min-width:767px)"
+					        srcset="images/delivery/delivery-tablet.webp 1x, images/delivery/delivery-tablet@2x.webp 1.3x"
+					        type="image/webp">
+					<source media="(min-width:767px)"
+					        srcset="images/delivery/delivery-tablet.jpg 1x, images/delivery/delivery-tablet@2x.jpg 1.3x"
+					        type="image/jpg">
+					<source srcset="images/delivery/delivery-mob.webp 1x, images/delivery/delivery-mob@2x.webp 1.3x"
+					        type="image/webp">
+					<source srcset="images/delivery/delivery-mob.jpg 1x, images/delivery/delivery-mob@2x.jpg 1.3x"
+					        type="image/jpg">
+					<img src="images/delivery/delivery-mob.jpg" width="330" height="196" alt="" loading="lazy">
+				</picture>
+			</div>
+			{% for item in makeOrder %}
+				<div class="make-order__item" data-anim="order">
+					<div class="make-order__top">
+						<div class="make-order__num">
+							{{ item.num }}
+						</div>
+						<div class="make-order__name">
+							{{ item.name }}
+						</div>
+					</div>
+					<div class="make-order__text">
+						{{ item.text|raw }}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

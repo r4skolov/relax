@@ -1,0 +1,398 @@
+<div id="city" class="modal" aria-hidden="true">
+	<div tabindex="1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container modal__container--city" data-modal-close="city">
+			<div class="modal__content modal__content--city active">
+				<div class="city">
+					<div class="city__head">
+						<div class="city__current">
+							<svg width="20" height="29" viewBox="0 0 20 29" fill="none"
+							     xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.73438 11.9039C2.73438 16.8592 7.13938 20.9571 9.08915 22.5283C9.36819 22.7531 9.50939 22.8669 9.71757 22.9246C9.87968 22.9695 10.1183 22.9695 10.2804 22.9246C10.4889 22.8668 10.6291 22.7541 10.9092 22.5284C12.859 20.9573 17.2638 16.8597 17.2638 11.9043C17.2638 10.029 16.4984 8.23029 15.136 6.90425C13.7736 5.5782 11.9259 4.83324 9.99921 4.83324C8.07248 4.83324 6.22457 5.57832 4.86217 6.90436C3.49977 8.2304 2.73438 10.0286 2.73438 11.9039Z"
+								      stroke="#333333" stroke-width="2.26923" stroke-linecap="round"
+								      stroke-linejoin="round"/>
+								<path d="M7.92348 10.9613C7.92348 12.0895 8.85278 13.004 9.99912 13.004C11.1455 13.004 12.0748 12.0895 12.0748 10.9613C12.0748 9.83316 11.1455 8.91862 9.99912 8.91862C8.85278 8.91862 7.92348 9.83316 7.92348 10.9613Z"
+								      stroke="#333333" stroke-width="2.26923" stroke-linecap="round"
+								      stroke-linejoin="round"/>
+							</svg>
+							<span>Вы из Москвы?</span>
+						</div>
+					</div>
+					<div class="city__wrap">
+						<button type="button" class="b-btn b-btn--primary" data-modal-close="city">
+							Да, верно
+						</button>
+						<button type="button" class="b-btn b-btn--secondary">
+							Выбрать другой город
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="modal__content modal__content--cityList">
+				<div class="city">
+					<div class="city__head">
+						<div class="city__current">
+							<svg width="20" height="29" viewBox="0 0 20 29" fill="none"
+							     xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.73438 11.9039C2.73438 16.8592 7.13938 20.9571 9.08915 22.5283C9.36819 22.7531 9.50939 22.8669 9.71757 22.9246C9.87968 22.9695 10.1183 22.9695 10.2804 22.9246C10.4889 22.8668 10.6291 22.7541 10.9092 22.5284C12.859 20.9573 17.2638 16.8597 17.2638 11.9043C17.2638 10.029 16.4984 8.23029 15.136 6.90425C13.7736 5.5782 11.9259 4.83324 9.99921 4.83324C8.07248 4.83324 6.22457 5.57832 4.86217 6.90436C3.49977 8.2304 2.73438 10.0286 2.73438 11.9039Z"
+								      stroke="#333333" stroke-width="2.26923" stroke-linecap="round"
+								      stroke-linejoin="round"/>
+								<path d="M7.92348 10.9613C7.92348 12.0895 8.85278 13.004 9.99912 13.004C11.1455 13.004 12.0748 12.0895 12.0748 10.9613C12.0748 9.83316 11.1455 8.91862 9.99912 8.91862C8.85278 8.91862 7.92348 9.83316 7.92348 10.9613Z"
+								      stroke="#333333" stroke-width="2.26923" stroke-linecap="round"
+								      stroke-linejoin="round"/>
+							</svg>
+							<span>Выберите город</span>
+						</div>
+						<button type="button" class="modal__close js-modal-close">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+							     xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.4999 14.4999L8 8M8 8L1.5 1.5M8 8L14.5 1.5M8 8L1.5 14.5" stroke="#7D7D7D"
+								      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+					</div>
+					<div class="city__group">
+						<ul class="city__list list-reset">
+							<li class="city__item">
+								<button type="button">
+									Москва
+								</button>
+							</li>
+							<li class="city__item">
+								<button type="button">
+									Нижний Новгород
+								</button>
+							</li>
+							<li class="city__item">
+								<button type="button">
+									Набережные Челны
+								</button>
+							</li>
+						</ul>
+						<ul class="city__list list-reset">
+							<li class="city__item">
+								<button type="button">
+									Казань
+								</button>
+							</li>
+							<li class="city__item">
+								<button type="button">
+									Йошкар-Ола
+								</button>
+							</li>
+							<li class="city__item">
+								<button type="button">
+									Чебоксары
+								</button>
+							</li>
+						</ul>
+						<ul class="city__list list-reset">
+							<li class="city__item">
+								<button type="button">
+									Тольятти
+								</button>
+							</li>
+							<li class="city__item">
+								<button type="button">
+									Ульяновск
+								</button>
+							</li>
+							<li class="city__item">
+								<button type="button">
+									Самара
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class=" modal__bg
+						" aria-hidden="true" data-modal-close="city">
+		</div>
+	</div>
+</div>
+
+<div id="cart" class="modal" aria-hidden="true">
+	<div tabindex="1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container modal__container--cart" data-modal-close="cart">
+			<button type="button" class="modal__close" data-modal-close="cart">
+				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16.9999 16.9999L9 9M9 9L1 1M9 9L17 1M9 9L1 17" stroke="#7D7D7D" stroke-width="2"
+					      stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</button>
+			<div class="modal__main">
+				<div class="cart">
+					<div class="cart__top">
+						<h4 class="cart__title">
+							Ваш заказ
+						</h4>
+					</div>
+					<div class="cart__body">
+						<div class="cart-item">
+							<div class="cart-item__left">
+								<div class="cart-item__img">
+									<picture>
+										<source srcset="images/product/product-1.webp 1x, images/product/product-1@2x.webp 1.3x"
+										        type="image/webp">
+										<source srcset="images/product/product-1.jpg 1x, images/product/product-1@2x.jpg 1.3x"
+										        type="image/jpg">
+										<img src="images/product/product-1.jpg" alt=""
+										     loading="lazy">
+									</picture>
+								</div>
+								<div class="cart-item__about">
+									<h3 class="cart-item__title">
+										Кровать Tiffany
+									</h3>
+									<ul class="cart-item__options list-reset">
+										<li>
+											Размер: 90х200
+										</li>
+										<li>
+											Подъемный механизм: Да
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="cart-item__right">
+								<div class="cart-item__price">
+									29 990₽
+								</div>
+								<button type="button" class="cart-item__delete">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									     xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.6654 8.33333V14.1667M8.33203 8.33333L8.33203 14.1667M3.33203 5H16.6654M14.9987 5V14.8333C14.9987 15.7668 14.9989 16.2335 14.8172 16.59C14.6574 16.9036 14.4021 17.1585 14.0885 17.3183C13.732 17.5 13.2656 17.5 12.3322 17.5H7.66553C6.73211 17.5 6.26505 17.5 5.90853 17.3183C5.59493 17.1585 5.34014 16.9036 5.18035 16.59C4.9987 16.2335 4.9987 15.7668 4.9987 14.8333V5H14.9987ZM13.332 5H6.66536C6.66536 4.22343 6.66536 3.83513 6.79223 3.52885C6.96139 3.12047 7.28563 2.79602 7.69401 2.62687C8.0003 2.5 8.3888 2.5 9.16536 2.5H10.832C11.6086 2.5 11.9969 2.5 12.3032 2.62687C12.7116 2.79602 13.0359 3.12047 13.2051 3.52885C13.3319 3.83513 13.332 4.22343 13.332 5Z"
+										      stroke="#349FEC" stroke-width="1.3" stroke-linecap="round"
+										      stroke-linejoin="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="cart__footer">
+							<div class="cart__total">
+								Итого:
+							</div>
+							<div class="cart__price">
+								29 990₽
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-form">
+					<h2 class="modal-form__title">
+						Оставьте свои контактные данные
+					</h2>
+					<div class="modal-form__text">
+						В ближайшее время наш менеджер свяжется с вами для подтверждения заказа
+					</div>
+					<form action="#" class="form form--modal">
+						<div class="form__group">
+							<div class="form__row">
+								<label for="name-cart">
+									<input type="text" id="name-cart" class="form__input" placeholder="Имя">
+								</label>
+							</div>
+							<div class="form__row">
+								<label for="phone">
+									<input type="tel" id="phone" name="phone-cart"
+									       class="form__input form__input--phone"
+									       placeholder="+7 (" aria-label="Телефон">
+								</label>
+							</div>
+						</div>
+						<div class="form__row">
+							<label for="checkbox-cart" class="checkbox-style">
+								<input type="checkbox" name="checkbox-cart" id="checkbox-cart">
+								<span>Я соглашаюсь с условиями <a
+											href="privacy-policy.html">политики конфиденциальности</a></span>
+							</label>
+						</div>
+						<button type="button" class="b-btn b-btn--primary disabled" data-btn="button">
+							Заказать
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="cart"></div>
+	</div>
+</div>
+
+<div id="catalog-modal" class="modal" aria-hidden="true">
+	<div tabindex="1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container modal__container--cart" data-modal-close="catalog-modal">
+			<button type="button" class="modal__close" data-modal-close="cart">
+				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16.9999 16.9999L9 9M9 9L1 1M9 9L17 1M9 9L1 17" stroke="#7D7D7D" stroke-width="2"
+					      stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</button>
+			<div class="modal__main">
+				<div class="modal-form modal-form--catalog">
+					<h2 class="modal-form__title">
+						Получите полный каталог моделей
+					</h2>
+					<div class="modal-form__text">
+						Оставьте контактный номер телефона и мы отправим полный каталог из 40 моделей кроватей на
+						WhatsApp
+					</div>
+					<form action="#" class="form form--modal">
+						<div class="form__group">
+							<div class="form__row">
+								<label for="name-catalog">
+									<input type="text" id="name-catalog" class="form__input" placeholder="Имя">
+								</label>
+							</div>
+							<div class="form__row">
+								<label for="phone-catalog">
+									<input type="tel" id="phone-catalog" name="phone-catalog"
+									       class="form__input form__input--phone"
+									       placeholder="+7 (" aria-label="Телефон">
+								</label>
+							</div>
+						</div>
+						<div class="form__row">
+							<label for="checkbox-catalog" class="checkbox-style">
+								<input type="checkbox" name="checkbox-catalog" id="checkbox-catalog">
+								<span>Я соглашаюсь с условиями <a
+											href="privacy-policy.html">политики конфиденциальности</a></span>
+							</label>
+						</div>
+						<button type="button" class="b-btn b-btn--primary disabled" data-btn="button">
+							Оставить заявку
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="cart"></div>
+	</div>
+</div>
+
+<div id="fabrics" class="modal" aria-hidden="true">
+	<div tabindex="1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container modal__container--cart" data-modal-close="fabrics">
+			<button type="button" class="modal__close" data-modal-close="cart">
+				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16.9999 16.9999L9 9M9 9L1 1M9 9L17 1M9 9L1 17" stroke="#7D7D7D" stroke-width="2"
+					      stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</button>
+			<div class="modal__main">
+				<div class="modal-form modal-form--fabrics">
+					<h2 class="modal-form__title">
+						Понравился вариант ткани?
+					</h2>
+					<div class="modal-form__text">
+						Оставьте контактные данные и мы поможем с выбором оттенка для кровати
+					</div>
+					<form action="#" class="form form--modal">
+						<div class="form__group">
+							<div class="form__row">
+								<label for="name-fabrics">
+									<input type="text" id="name-fabrics" class="form__input" placeholder="Имя">
+								</label>
+							</div>
+							<div class="form__row">
+								<label for="phone-fabrics">
+									<input type="tel" id="phone-fabrics" name="phone-fabrics"
+									       class="form__input form__input--phone"
+									       placeholder="+7 (" aria-label="Телефон">
+								</label>
+							</div>
+						</div>
+						<div class="form__row">
+							<label for="checkbox-fabrics" class="checkbox-style">
+								<input type="checkbox" name="checkbox-fabrics" id="checkbox-fabrics">
+								<span>Я соглашаюсь с условиями <a
+											href="privacy-policy.html">политики конфиденциальности</a></span>
+							</label>
+						</div>
+						<button type="button" class="b-btn b-btn--primary disabled" data-btn="button">
+							Оставить заявку
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="cart"></div>
+	</div>
+</div>
+
+<div id="default" class="modal" aria-hidden="true">
+	<div tabindex="1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container modal__container--cart" data-modal-close="default">
+			<button type="button" class="modal__close" data-modal-close="cart">
+				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16.9999 16.9999L9 9M9 9L1 1M9 9L17 1M9 9L1 17" stroke="#7D7D7D" stroke-width="2"
+					      stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</button>
+			<div class="modal__main">
+				<div class="modal-form modal-form--default">
+					<h2 class="modal-form__title">
+						Оставьте заявку
+					</h2>
+					<div class="modal-form__text">
+						Оставьте контактные данные и наш менеджер свяжется с вами в ближайшее время
+					</div>
+					<form action="#" class="form form--modal">
+						<div class="form__group">
+							<div class="form__row">
+								<label for="name-default">
+									<input type="text" id="name-default" class="form__input" placeholder="Имя">
+								</label>
+							</div>
+							<div class="form__row">
+								<label for="phone-default">
+									<input type="tel" id="phone-default" name="phone-default"
+									       class="form__input form__input--phone"
+									       placeholder="+7 (" aria-label="Телефон">
+								</label>
+							</div>
+						</div>
+						<div class="form__row">
+							<label for="checkbox-default" class="checkbox-style">
+								<input type="checkbox" name="checkbox-default" id="checkbox-default">
+								<span>Я соглашаюсь с условиями <a
+											href="privacy-policy.html">политики конфиденциальности</a></span>
+							</label>
+						</div>
+						<button type="button" class="b-btn b-btn--primary disabled" data-btn="button">
+							Оставить заявку
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="cart"></div>
+	</div>
+</div>
+
+<div id="successfull" class="modal" aria-hidden="true">
+	<div tabindex="1" class="modal__overlay" data-micromodal-close>
+		<div role="dialog" class="modal__container modal__container--cart" data-modal-close="cart">
+			<button type="button" class="modal__close" data-modal-close="successfull">
+				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16.9999 16.9999L9 9M9 9L1 1M9 9L17 1M9 9L1 17" stroke="#7D7D7D" stroke-width="2"
+					      stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</button>
+			<div class="modal__main">
+				<div class="done">
+					<div class="done__img">
+						<img src="images/icon/done-icon.svg" width="45" height="45" alt="">
+					</div>
+					<div class="done__title">
+						Спасибо, данные успешно отправлены!
+					</div>
+					<div class="done__text">
+						В ближайшее время наш менеджер свяжется с вами
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__bg" aria-hidden="true" data-modal-close="cart"></div>
+	</div>
+</div>

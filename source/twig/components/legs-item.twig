@@ -1,0 +1,15 @@
+<div class="legs-item{{ class ? ' ' ~ class }}">
+	<div class="legs-item__shield">
+		{{ item.shield }}
+	</div>
+	<div class="legs-item__img">
+		<picture>
+			<source srcset="{{ item.img }}.webp 1x, {{ item.img }}@2x.webp 1.3x"
+			        type="image/webp">
+			<source srcset="{{ item.img }}.jpg 1x, {{ item.img }}@2x.png 1.3x"
+			        type="image/jpg">
+			<img src="{{ item.img }}.jpg" width="238" height="208" alt=""
+			     loading="lazy">
+		</picture>
+	</div>
+</div>

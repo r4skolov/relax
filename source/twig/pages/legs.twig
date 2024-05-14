@@ -1,0 +1,50 @@
+{% extends "../template/layout.twig" %}
+{% block title %}Ножки{% endblock %}
+{% block page %}
+	{% include '../components/breadcrumbs.twig' with {
+		breadcrumbs:[
+			{
+				'link':'fabrics.html',
+				'name':'Ножки',
+				'active':true
+			}
+		]
+	} only %}
+	{% include '../partial/legs/legs.twig' with {} only %}
+	{% include '../partial/legs/for-professional.twig' with {
+		profTitle:'Доверьтесь профессионалам',
+		profSubTitle:'Рекомендация дизайнера',
+		profText:'Ножки высотой 15 см — отличный выбор для тех, у кого есть робот-пылесос. Ножки обладают
+						эксклюзивным дизайном и доступны в различных оттенках',
+		profMini:[
+			{
+				'img':'prof-mini-1',
+			},
+			{
+				'img':'prof-mini-2',
+			},
+			{
+				'img':'prof-mini-3',
+			},
+			{
+				'img':'prof-mini-4',
+			},
+
+		],
+		profBigImg:'prof-mini-big'
+	} only %}
+	{% include '../blocks/banner-form.twig' with {
+		class:'banner-form--fabrics',
+		bannerTitle:'Создайте комфортное спальное место с нашей кроватью',
+		bannerText:'Оставьте контактный номер телефона и мы свяжемся с вами для обсуждения деталей вашего заказа',
+		bannerBtn:'Оставить заявку',
+		bannerImg:'images/icon/banner-bg',
+		bannerWidth:'673',
+		bannerHeight:'473',
+		bannerId:'get-catalog'
+
+	} only %}
+{% endblock %}
+{% block scripts %}
+	<script src="js/slider.min.js"></script>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "../template/layout.twig" %}
+{% block title %}Отзывы{% endblock %}
+{% block page %}
+	{% include '../components/breadcrumbs.twig' with {
+		breadcrumbs:[
+			{
+				'link':'fabrics.html',
+				'name':'Отзывы',
+				'active':true
+			}
+		]
+	} only %}
+	{% include '../partial/reviews/reviews-list.twig' with {} only %}
+	{% include '../blocks/banner-form.twig' with {
+		class:'banner-form--fabrics',
+		bannerTitle:'Создайте комфортное спальное место с нашей кроватью',
+		bannerText:'Оставьте контактный номер телефона и мы свяжемся с вами для обсуждения деталей вашего заказа',
+		bannerBtn:'Оставить заявку',
+		bannerImg:'images/icon/banner-bg',
+		bannerWidth:'673',
+		bannerHeight:'473',
+		bannerId:'get-catalog'
+
+	} only %}
+{% endblock %}

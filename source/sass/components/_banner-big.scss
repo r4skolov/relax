@@ -1,0 +1,97 @@
+.banner-big__wrapper {
+	border-radius     : var(--border-radius-big);
+	overflow          : hidden;
+	position          : relative;
+	background-image  : image-set(
+					"../images/contacts/banner-bg-mob.webp" 1x,
+					"../images/contacts/banner-bg-mob.jpg" 1x,
+					"../images/contacts/banner-bg-mob@2x.webp" 2x,
+					"../images/contacts/banner-bg-mob@2x.jpg" 2x
+	);
+	background-repeat : no-repeat;
+	background-size   : cover;
+	min-height        : 550px;
+	padding           : 16px 16px;
+	display           : flex;
+	flex-direction    : column;
+	justify-content   : flex-end;
+
+	
+	@media screen and (min-width : $break-table) {
+		padding          : 28px 28px;
+		background-image : image-set(
+						"../images/contacts/banner-bg-tablet.webp" 1x,
+						"../images/contacts/banner-bg-tablet.jpg" 1x,
+						"../images/contacts/banner-bg-tablet@2x.webp" 2x,
+						"../images/contacts/banner-bg-tablet@2x.jpg" 2x
+		);
+
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		justify-content  : flex-start;
+		background-image : image-set(
+						"../images/contacts/banner-bg.webp" 1x,
+						"../images/contacts/banner-bg.jpg" 1x,
+						"../images/contacts/banner-bg@2x.webp" 2x,
+						"../images/contacts/banner-bg@2x.jpg" 2x
+		);
+	}
+}
+
+.banner-big__img {
+	border-radius : var(--border-radius-big);
+	overflow      : hidden;
+}
+
+.banner-big__main {
+	background-color : var(--white-color);
+	width            : 100%;
+	border-radius    : var(--border-radius-big);
+	padding          : 28px 16px;
+	max-width        : 512px;
+
+	@media screen and (min-width : $break-table) {
+		padding : 48px 28px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.banner-big__title {
+	font-weight    : 700;
+	font-size      : 24px;
+	line-height    : 120%;
+	letter-spacing : -0.02em;
+	color          : var(--dark-color);
+	margin-bottom  : 12px;
+
+	@media screen and (min-width : $break-table) {
+		font-size     : 32px;
+		max-width     : 430px;
+		margin-bottom : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		font-size : 36px;
+	}
+}
+
+.banner-big__text {
+	font-weight : 400;
+	font-size   : 14px;
+	line-height : 130%;
+	color       : var(--black-color);
+
+
+	@media screen and (min-width : $break-table) {
+		font-size : 16px;
+		max-width : 400px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}

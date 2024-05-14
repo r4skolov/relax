@@ -1,0 +1,10 @@
+@mixin svg-figure-3() {
+	background: url('../images/sprite.svg?v1697124313362') 0 0 no-repeat;
+	width: 226px;
+	height: 278px;
+	display: inline-block;
+}
+
+.icon-figure-3 {
+	@include svg-figure-3()
+}

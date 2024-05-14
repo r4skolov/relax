@@ -1,0 +1,61 @@
+<div class="legs-about" data-slider="legsmini-slider">
+	<div class="legs-about__img">
+		<div class="swiper swiper--background">
+			<div class="swiper-wrapper">
+				{% for imgPath in item.imgMain %}
+					<div class="swiper-slide">
+						<picture>
+							<source media="(min-width:1199px)"
+							        srcset="{{ imgPath.img }}.webp 1x, {{ imgPath.img }}@2x.webp 1.3x"
+							        type="image/webp">
+							<source media="(min-width:1199px)"
+							        srcset="{{ imgPath.img }}.jpg 1x, {{ imgPath.img }}@2x.jpg 1.3x"
+							        type="image/jpg">
+							<source media="(min-width:767px)"
+							        srcset="{{ imgPath.img }}-tablet.webp 1x, {{ imgPath.img }}-tablet@2x.webp 1.3x"
+							        type="image/webp">
+							<source media="(min-width:767px)"
+							        srcset="{{ imgPath.img }}-tablet.jpg 1x, {{ imgPath.img }}-tablet@2x.jpg 1.3x"
+							        type="image/jpg">
+							<source srcset="{{ imgPath.img }}-mob.webp 1x, {{ imgPath.img }}-mob@2x.webp 1.3x"
+							        type="image/webp">
+							<source srcset="{{ imgPath.img }}-mob.jpg 1x, {{ imgPath.img }}-mob@2x.jpg 1.3x"
+							        type="image/jpg">
+							<img src="{{ imgPath.img }}-mob.jpg" alt=""
+							     loading="lazy">
+						</picture>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="legs-about__main">
+		<h3 class="legs-about__title">
+			Ножки {{ item.value }} см
+		</h3>
+		<div class="legs-about__text">
+			<p>
+				{{ item.about }}
+			</p>
+		</div>
+		<div class="legs-about__wrap">
+			Модели ножек
+			<ul class="list-reset">
+				{% for slideBtn in item.slideButton %}
+					<li>
+						<button type="button" class="{{ slideBtn.class }}" data-slide="{{ slideBtn.data }}">
+							<picture>
+								<source srcset="{{ slideBtn.img }}.webp 1x, {{ slideBtn.img }}@2x.webp 1.3x"
+								        type="image/webp">
+								<source srcset="{{ slideBtn.img }}.jpg 1x, {{ slideBtn.img }}@2x.jpg 1.3x"
+								        type="image/jpg">
+								<img src="{{ slideBtn.img }}.jpg" width="180" height="180" alt=""
+								     loading="lazy">
+							</picture>
+						</button>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>

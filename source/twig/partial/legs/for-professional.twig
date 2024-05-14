@@ -1,0 +1,49 @@
+<section class="professional section-offset">
+	<div class="container">
+		<h2 class="section-title professional__title">
+			{{ profTitle }}
+		</h2>
+		<div class="professional__grid">
+			<div class="professional__item">
+				<h3 class="professional__subtitle">
+					{{ profSubTitle }}
+				</h3>
+				<div class="professional__text">
+					<p>
+						{{ profText }}
+					</p>
+				</div>
+				<button type="button" class="b-btn b-btn--primary" data-modal-open="default">
+					<span>Заказать кровать</span>
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3.33398 8H12.6673M12.6673 8L8.66732 4M12.6673 8L8.66732 12" stroke="white"
+						      stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>
+			</div>
+			<div class="professional__mini">
+				{% for item in profMini %}
+					<div class="professional__img" data-anim="professional">
+						<picture>
+							<source srcset="images/legs/prof/{{ item.img }}.webp 1x, images/legs/prof/{{ item.img }}@2x.webp 1.3x"
+							        type="image/webp">
+							<source srcset="images/legs/prof/{{ item.img }}.jpg 1x, images/legs/prof/{{ item.img }}@2x.jpg 1.3x"
+							        type="image/jpg">
+							<img src="images/legs/prof/{{ item.img }}.jpg" width="182" height="162" alt=""
+							     loading="lazy">
+						</picture>
+					</div>
+				{% endfor %}
+			</div>
+			<div class="professional__big" data-anim="professional">
+				<picture>
+					<source srcset="images/legs/prof/{{ profBigImg }}.webp 1x, images/legs/prof/{{ profBigImg }}@2x.webp 1.3x"
+					        type="image/webp">
+					<source srcset="images/legs/prof/{{ profBigImg }}.jpg 1x, images/legs/prof/{{ profBigImg }}g@2x.jpg 1.3x"
+					        type="image/jpg">
+					<img src="images/legs/prof/{{ profBigImg }}.jpg" width="379" height="340" alt="" loading="lazy">
+				</picture>
+			</div>
+		</div>
+	</div>
+</section>

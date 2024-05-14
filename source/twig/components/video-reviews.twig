@@ -1,0 +1,12 @@
+<div class="swiper swiper--reviews">
+	<div class="swiper-wrapper">
+		{% for item in reviewsSlider %}
+			<div class="swiper-slide">
+				{% include 'video-reviews-card.twig' with {
+					item:item
+				} only %}
+			</div>
+		{% endfor %}
+	</div>
+	<div class="swiper-scrollbar"></div>
+</div>

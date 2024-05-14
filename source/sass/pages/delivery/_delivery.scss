@@ -1,0 +1,125 @@
+.delivery {
+	margin-top : 80px;
+}
+
+.delivery__title {
+	text-align    : center;
+	margin-bottom : 28px;
+
+	@media screen and (min-width : $break-table) {
+		margin-bottom : 70px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.delivery__grid {
+	display               : grid;
+	grid-template-columns : repeat(4, 1fr);
+	grid-gap              : 12px;
+
+	@media screen and (min-width : $break-table) {
+		grid-template-columns : repeat(12, 1fr);
+		grid-gap              : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.delivery__item {
+	grid-column      : 4 span;
+	border-radius    : var(--border-radius-big);
+	padding          : 36px 16px;
+	background-color : var(--background-color);
+	position         : relative;
+	overflow         : hidden;
+
+	@media screen and (min-width : $break-table) {
+		grid-column : 6 span;
+		padding     : 48px 28px;
+		min-height  : 372px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		min-height : 400px;
+	}
+
+	&:before {
+		content        : "0₽";
+		position       : absolute;
+		bottom         : -62px;
+		right          : -36px;
+		z-index        : 1;
+		font-weight    : 700;
+		font-size      : 219px;
+		line-height    : 100%;
+		letter-spacing : -0.02em;
+
+		@media screen and (min-width : $break-table) {
+
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			bottom    : -62px;
+			font-size : 332px;
+			right     : -36px;
+		}
+	}
+
+	&:first-child {
+		color : #EAF5FF;
+	}
+
+	&:last-child {
+		color : #F6F0FF;
+	}
+}
+
+.delivery__name {
+	font-weight    : 700;
+	font-size      : 24px;
+	line-height    : 120%;
+	letter-spacing : -0.02em;
+	color          : var(--dark-color);
+	max-width      : 195px;
+	position       : relative;
+	z-index        : 2;
+	margin-bottom  : 16px;
+
+	@media screen and (min-width : $break-table) {
+		font-size : 32px;
+		max-width : 286px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		font-size : 36px;
+	}
+}
+
+.delivery__text {
+	font-weight : 400;
+	font-size   : 14px;
+	line-height : 130%;
+	color       : var(--black-color);
+	max-width   : 430px;
+	position    : relative;
+	z-index     : 2;
+
+	@media screen and (min-width : $break-table) {
+		font-size : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+
+	p {
+		&:not(:last-child) {
+			margin-bottom : 16px;
+		}
+	}
+}

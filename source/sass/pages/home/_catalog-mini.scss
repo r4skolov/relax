@@ -1,0 +1,27 @@
+.catalog-mini__title {
+	text-align    : center;
+	margin-bottom : 28px;
+
+	@media screen and (min-width : $break-table) {
+		margin-bottom : 44px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.catalog-mini__grid {
+	display               : grid;
+	grid-template-columns : repeat(4, 1fr);
+	grid-gap              : 32px 16px;
+
+	@media screen and (min-width : $break-table) {
+		grid-template-columns : repeat(6, 1fr);
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		grid-template-columns : repeat(12, 1fr);
+	}
+}
+

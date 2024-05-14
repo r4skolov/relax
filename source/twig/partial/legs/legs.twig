@@ -1,0 +1,208 @@
+{% set legsBtn = [
+	{
+		'class':'legs-item--tabs',
+		'shield':'0 см',
+		'img':'images/legs/legs-0',
+	},
+	{
+		'class':'legs-item--tabs',
+		'shield':'2,5 см',
+		'img':'images/legs/legs-2.5',
+	},
+	{
+		'class':'legs-item--tabs',
+		'shield':'5 см',
+		'img':'images/legs/legs-5',
+	},
+	{
+		'class':'legs-item--tabs',
+		'shield':'6 см',
+		'img':'images/legs/legs-6',
+	},
+	{
+		'class':'legs-item--tabs',
+		'shield':'10 см',
+		'img':'images/legs/legs-10',
+	},
+	{
+		'class':'legs-item--tabs',
+		'shield':'13 см',
+		'img':'images/legs/legs-13',
+	},
+	{
+		'class':'legs-item--tabs',
+		'shield':'15 см',
+		'img':'images/legs/legs-15',
+	},
+] %}
+
+{% set legsAbout = [
+	{
+		'imgMain':[
+		{
+			'img':'images/legs/legs-big',
+		},
+		{
+			'img':'images/legs/legs-big',
+		},
+		{
+			'img':'images/legs/legs-big',
+		},
+		{
+			'img':'images/legs/legs-big',
+		},
+		{
+			'img':'images/legs/legs-big',
+		},
+	],
+		'value': '0',
+		'about':'Высота ножек способствует легкой уборке под кроватью с использованием швабры или
+				пылесоса',
+		'slideButton':[
+		{
+			'data':'0',
+			'class':'active',
+			'img':'images/legs/legs-0',
+		},
+		{
+			'data':'1',
+			'img':'images/legs/legs-0',
+		},
+		{
+			'data':'2',
+			'img':'images/legs/legs-0',
+		},
+		{
+			'data':'3',
+			'img':'images/legs/legs-0',
+		},
+		{
+			'data':'4',
+			'img':'images/legs/legs-0',
+		}
+	]
+	},
+	{
+		'imgMain':[
+		{
+			'img':'images/legs/legs-big',
+		},
+		{
+			'img':'images/legs/legs-big',
+		},
+		{
+			'img':'images/legs/legs-big',
+		},
+		{
+			'img':'images/legs/legs-big',
+		},
+		{
+			'img':'images/legs/legs-big',
+		},
+	],
+		'value': '2,5',
+		'about':'Высота ножек способствует легкой уборке под кроватью с использованием швабры или
+				пылесоса',
+		'slideButton':[
+		{
+			'data':'0',
+			'class':'active',
+			'img':'images/legs/legs-0',
+		},
+		{
+			'data':'1',
+			'img':'images/legs/legs-0',
+		},
+		{
+			'data':'2',
+			'img':'images/legs/legs-0',
+		},
+		{
+			'data':'3',
+			'img':'images/legs/legs-0',
+		},
+		{
+			'data':'4',
+			'img':'images/legs/legs-0',
+		}
+	]
+	},
+	{
+		'imgMain':[
+		{
+			'img':'images/legs/legs-big',
+		},
+		{
+			'img':'images/legs/legs-big',
+		},
+		{
+			'img':'images/legs/legs-big',
+		},
+		{
+			'img':'images/legs/legs-big',
+		},
+		{
+			'img':'images/legs/legs-big',
+		},
+	],
+		'value': '5',
+		'about':'Высота ножек способствует легкой уборке под кроватью с использованием швабры или
+				пылесоса',
+		'slideButton':[
+		{
+			'data':'0',
+			'class':'active',
+			'img':'images/legs/legs-0',
+		},
+		{
+			'data':'1',
+			'img':'images/legs/legs-0',
+		},
+		{
+			'data':'2',
+			'img':'images/legs/legs-0',
+		},
+		{
+			'data':'3',
+			'img':'images/legs/legs-0',
+		},
+		{
+			'data':'4',
+			'img':'images/legs/legs-0',
+		}
+	]
+	},
+] %}
+
+<div class="legs section-offset" data-slider="legsBig-slider">
+	<div class="container">
+		<h2 class="section-title legs__title">
+			Выберите ножки для новой кровати
+		</h2>
+		<div class="legs__header">
+			<div class="swiper swiper--nav">
+				<div class="swiper-wrapper">
+					{% for item in legsBtn %}
+						<div class="swiper-slide">
+							{% include '../../components/legs-item.twig' with {
+								item:item,
+								class:'legs-item--tabs'
+							} only %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<div class="swiper swiper--legsmain">
+			<div class="swiper-wrapper">
+				{% for item in legsAbout %}
+					<div class="swiper-slide">
+						{% include '../../components/legs-about.twig' with {
+							item:item,
+						} only %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

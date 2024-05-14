@@ -1,0 +1,53 @@
+<section class="banner-form{{ class ? ' ' ~ class }} section-offset">
+	<div class="container">
+		<div class="banner-form__wrapper">
+			<div class="banner-form__left">
+				<h2 class="banner-form__title">
+					{{ bannerTitle }}
+				</h2>
+				<div class="banner-form__text">
+					<p>
+						{{ bannerText }}
+					</p>
+				</div>
+				<div class="banner-form__form">
+					<form class="form form--catalog" action="#" id="{{ bannerId }}" data-form-validation="wrapper"
+					      data-request="contactsForm::onFormSubmit"
+					      novalidate="novalidate">
+						<div class="form__row">
+							<label for="phone-banner">
+								<input type="tel" id="phone-banner" name="phone-banner"
+								       class="form__input form__input--phone"
+								       placeholder="+7 (" aria-label="Телефон">
+							</label>
+						</div>
+						<button type="button" class="b-btn b-btn--primary disabled" data-btn="button">
+							<span>{{ bannerBtn }}</span>
+							<svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+							     xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.3335 8.3479H12.6668M12.6668 8.3479L8.66683 4.3479M12.6668 8.3479L8.66683 12.3479"
+								      stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+					</form>
+					<div class="banner-form__bottom">
+						Нажимая кнопку «{{ bannerBtn }}», вы соглашаетесь с условиями <a href="privacy-policy.html">политики
+							конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+			{% if bannerImg %}
+				<div class="banner-form__img">
+					<picture>
+						<source srcset="{{ bannerImg }}.webp 1x,{{ bannerImg }}@2x.webp 1.3x"
+						        type="image/webp">
+						<source srcset="{{ bannerImg }}.png 1x, {{ bannerImg }}@2x.png 1.3x"
+						        type="image/png">
+						<img src="{{ bannerImg }}.png" width="{{ bannerWidth }}" height="{{ bannerHeight }}" alt=""
+						     loading="lazy">
+					</picture>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</section>

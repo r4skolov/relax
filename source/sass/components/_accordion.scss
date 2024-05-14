@@ -1,0 +1,152 @@
+
+.accordion {
+	border-radius    : 20px;
+	width            : 100%;
+	background-color : var(--background-color);
+
+	@media screen and (min-width : $break-table) {
+
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+
+	&:not(:last-child) {
+		margin-bottom : 24px;
+	}
+
+	&.box-panel {
+		padding : 0;
+	}
+}
+
+.accordion.open {
+
+	.accordion__content {
+		grid-template-rows : 1fr;
+
+
+		@media screen and (min-width : $break-table) {
+
+		}
+
+		@media screen and (min-width : $break-desktop) {
+
+		}
+	}
+
+	.accordion__icon {
+		transition : transform .3s ease;
+		transform  : rotate(180deg);
+	}
+}
+
+.accordion__control {
+	background-color : transparent;
+	border           : none;
+	cursor           : pointer;
+	display          : flex;
+	justify-content  : space-between;
+	padding          : 28px 16px;
+	width            : 100%;
+	align-items      : center;
+
+	@media screen and (min-width : $break-table) {
+		padding : 28px 28px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+
+.accordion__content {
+	display            : grid;
+	grid-template-rows : 0fr;
+	transition         : grid-template-rows 500ms, margin-top 500ms;
+}
+
+.accordion__main {
+	overflow : hidden;
+
+}
+
+.accordion__wrapper {
+	padding : 0 16px 28px 16px;
+
+	@media screen and (min-width : $break-table) {
+		padding : 0 28px 28px 28px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.accordion__icon {
+	height     : 16px;
+	transition : transform .3s ease;
+	width      : 16px;
+	transform  : rotate(360deg);
+
+	svg {
+		width  : 16px;
+		height : 16px;
+	}
+
+	@media screen and (min-width : $break-table) {
+		height : 24px;
+		width  : 24px;
+		svg {
+			height : 24px;
+			width  : 24px;
+		}
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.accordion__title {
+	color          : var(--dark-color);
+	font-weight    : 700;
+	font-size      : 20px;
+	line-height    : 130%;
+	letter-spacing : -0.02em;
+	text-align     : start;
+
+	@media screen and (min-width : $break-desktop) {
+		font-size   : 24px;
+		font-weight : 500;
+		line-height : 125%;
+	}
+}
+
+
+.accordion--privacy {
+
+	&:not(:last-child) {
+		margin-bottom : 12px;
+
+		@media screen and (min-width : $break-table) {
+			margin-bottom : 16px;
+		}
+	}
+
+	.accordion__title {
+		font-weight : 700;
+	}
+
+	.about-item--privacy {
+		max-width : none;
+
+		p {
+			margin-bottom : 0;
+		}
+	}
+}
+
+

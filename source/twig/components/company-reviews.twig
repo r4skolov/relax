@@ -1,0 +1,19 @@
+<ul class="reviews-company list-reset">
+	{% for item in companyReviews %}
+		<li class="reviews-company__item">
+			<a href="#" class="reviews-company__link">
+				<div class="reviews-company__icon">
+					<img src="{{ item.icon }}" alt="{{ item.name }}" width="48" height="48" loading="lazy">
+				</div>
+				<div class="reviews-company__wrap">
+					<div class="reviews-company__name">
+						{{ item.name }}
+					</div>
+					<div class="reviews-company__rating">
+						{{ item.rating }}
+					</div>
+				</div>
+			</a>
+		</li>
+	{% endfor %}
+</ul>

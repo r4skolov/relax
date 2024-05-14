@@ -1,0 +1,166 @@
+.product-card {
+	grid-column      : 4 span;
+	padding          : 8px 8px 20px 8px;
+	background-color : var(--background-color);
+	border-radius    : var(--border-radius-big);
+
+	@media screen and (min-width : $break-table) {
+		grid-column : 3 span;
+		padding     : 16px 16px 24px 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		grid-column : 4 span;
+	}
+}
+
+.product-card__label {
+	font-weight      : 400;
+	font-size        : 14px;
+	line-height      : 130%;
+	color            : var(--black-color);
+	background-color : var(--white-color);
+	padding          : 6px 10px;
+	border-radius    : var(--border-radius-big);
+	position         : absolute;
+	top              : 8px;
+	left             : 8px;
+
+	@media screen and (min-width : $break-table) {
+		top  : 16px;
+		left : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.product-card__img {
+	border-radius : var(--border-radius-md);
+	overflow      : hidden;
+	margin-bottom : 16px;
+	position      : relative;
+
+	@media screen and (min-width : $break-table) {
+		margin-bottom : 20px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+
+	img {
+		width      : 100%;
+		object-fit : cover;
+	}
+}
+
+.product-card__top {
+	display         : flex;
+	justify-content : space-between;
+	align-items     : center;
+	
+	@media screen and (min-width : $break-table) {
+		margin-bottom : 20px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.product-card__main {
+	.b-btn {
+		display : none;
+		@media screen and (min-width : $break-table) {
+			display : inline-flex;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+
+		}
+	}
+}
+
+.product-card__name {
+	font-weight : 400;
+	font-size   : 18px;
+	line-height : 130%;
+	color       : var(--black-color);
+
+	@media screen and (min-width : $break-table) {
+		font-size : 20px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.product-card__price {
+	display     : flex;
+	align-items : center;
+	gap         : 10px;
+
+	@media screen and (min-width : $break-table) {
+
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.old-price {
+	text-decoration : line-through;
+	font-weight     : 400;
+	font-size       : 16px;
+	line-height     : 130%;
+	color           : var(--gray-color);
+
+	@media screen and (min-width : $break-table) {
+		font-size : 20px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.current-price {
+	font-weight : 500;
+	font-size   : 16px;
+	line-height : 130%;
+	color       : var(--black-color);
+
+	@media screen and (min-width : $break-table) {
+		font-size : 20px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.product-card__size {
+	margin-bottom : 20px;
+	display       : none;
+	@media screen and (min-width : $break-table) {
+		display : block;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.product-card__subname {
+	font-weight   : 400;
+	font-size     : 14px;
+	line-height   : 130%;
+	color         : var(--gray2-color);
+	margin-bottom : 8px;
+}
+
+

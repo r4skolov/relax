@@ -1,0 +1,110 @@
+.add-slider__title {
+	text-align    : center;
+	margin-bottom : 28px;
+
+	@media screen and (min-width : $break-table) {
+		margin-bottom : 44px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.add-slider__slider {
+	overflow : hidden;
+	margin   : 0 -15px;
+	@media screen and (min-width : $break-table) {
+		margin : 0 -22px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		margin : 0 -8px;
+	}
+}
+
+.add-slider__item {
+
+	img {
+		width         : 100%;
+		height        : 100%;
+		object-fit    : cover;
+		max-width     : none;
+		border-radius : var(--border-radius-big);
+		overflow      : hidden;
+	}
+}
+
+.swiper--addslider {
+	overflow : visible;
+	position : relative;
+
+	.swiper-slide {
+		width  : 75%;
+		margin : 0 6px;
+
+		@media screen and (min-width : $break-table) {
+			width  : 45%;
+			margin : 0 8px;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			width : 32%;
+		}
+
+
+		&:first-child {
+			margin : 0 6px 0 15px;
+
+			@media screen and (min-width : $break-table) {
+				margin : 0 8px 0 22px;
+			}
+
+			@media screen and (min-width : $break-desktop) {
+				margin : 0 8px;
+			}
+		}
+
+		&:last-child {
+			margin : 0 15px 0 6px;
+
+			@media screen and (min-width : $break-table) {
+				margin : 0 22px 0 8px;
+			}
+
+			@media screen and (min-width : $break-desktop) {
+				margin : 0 8px;
+			}
+		}
+	}
+
+	.swiper-scrollbar {
+		position : relative;
+		margin   : 12px 15px 0 15px;
+		bottom   : unset;
+		width    : calc(100% - 30px);
+
+		@media screen and (min-width : $break-table) {
+			margin-top : 16px;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			display : none;
+		}
+	}
+}
+
+.add-slider__wrapper {
+	position : relative;
+
+	.swiper-button {
+		display : none;
+		@media screen and (min-width : $break-table) {
+
+		}
+
+		@media screen and (min-width : $break-desktop) {
+			display : flex;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+<!-- Footer -->
+<footer class="footer" id="footer">
+	<div class="container">
+		<div class="footer__grid">
+			<div class="footer__item">
+				<div class="footer__name">
+					Телефон
+				</div>
+				<a href="+7927243-33-55" class="footer__num">
+					+7 (927) 243-33-55
+				</a>
+			</div>
+			<div class="footer__item">
+				<div class="footer__name">
+					Мессенджеры
+				</div>
+				{% include "social.twig" %}
+			</div>
+			<div class="footer__form">
+				<div class="footer__title">
+					Остались вопросы? Мы вам позвоним!
+				</div>
+				<form action="#" class="form form--footer">
+					<div class="form__row">
+						<label for="phone-footer" class="form__label">
+							<input type="tel" id="phone-footer" name="phone-footer"
+							       class="form__input form__input--phone"
+							       placeholder="+7 (" aria-label="Телефон">
+						</label>
+					</div>
+					<button type="button" class="b-btn b-btn--primary disabled" data-btn="button">
+						<span>Оставить заявку</span>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.3335 8H12.6668M12.6668 8L8.66683 4M12.6668 8L8.66683 12" stroke="white"
+							      stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__link">
+				2024© Relax Mebel
+			</div>
+			<a href="privacy-policy.html" class="footer__link">
+				Политика конфиденциальности
+			</a>
+			<a href="#" class="footer__link">
+				Сделано в Rhino
+			</a>
+		</div>
+	</div>
+</footer>

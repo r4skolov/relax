@@ -1,0 +1,237 @@
+
+.guarantee__wrapper {
+	display               : grid;
+	grid-template-columns : repeat(4, 1fr);
+	grid-gap              : 16px;
+
+	@media screen and (min-width : $break-table) {
+
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		grid-template-columns : repeat(12, 1fr);
+	}
+}
+
+.guarantee__left {
+	grid-column   : 4 span;
+	overflow      : hidden;
+	border-radius : var(--border-radius-big);
+	grid-row      : 2/2;
+	@media screen and (min-width : $break-table) {
+
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		grid-row    : unset;
+		grid-column : 5 span;
+	}
+
+	img {
+		width      : 100%;
+		object-fit : cover;
+	}
+}
+
+.guarantee__right {
+	grid-column      : 4 span;
+	background-color : var(--background-color);
+	border-radius    : var(--border-radius-big);
+	display          : flex;
+	flex-direction   : column;
+	height           : auto;
+	overflow         : hidden;
+
+	@media screen and (min-width : $break-table) {
+
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		grid-column : 7 span;
+	}
+}
+
+.guarantee__wrap {
+	margin-bottom : 20px;
+	padding       : 48px 0 0 28px;
+
+	@media screen and (min-width : $break-table) {
+		padding       : 48px 0 0 28px;
+		margin-bottom : 47px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+}
+
+.guarantee__subtitle {
+	color         : var(--dark-color);
+	font-weight   : 700;
+	margin-bottom : 12px;
+
+	@media screen and (min-width : $break-table) {
+		margin-bottom : 16px;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+
+	span {
+		display : block;
+
+		&:first-child {
+			font-size      : 72px;
+			line-height    : 101%;
+			letter-spacing : -0.02em;
+
+			@media screen and (min-width : $break-table) {
+				font-size   : 96px;
+				line-height : 104%;
+			}
+
+			@media screen and (min-width : $break-desktop) {
+				font-size   : 112px;
+				line-height : 89%;
+			}
+		}
+
+		&:last-child {
+			font-size      : 24px;
+			line-height    : 120%;
+			letter-spacing : -0.02em;
+			max-width      : 250px;
+
+			@media screen and (min-width : $break-table) {
+				font-size : 32px;
+				max-width : 396px;
+			}
+
+			@media screen and (min-width : $break-desktop) {
+				font-size : 36px;
+			}
+		}
+	}
+}
+
+.guarantee__text {
+	font-weight : 400;
+	font-size   : 16px;
+	line-height : 130%;
+	color       : var(--black-color);
+	max-width   : 396px;
+}
+
+.guarantee__items {
+	position : relative;
+	height   : 251px;
+	@media screen and (min-width : $break-table) {
+		height    : 251px;
+		min-width : 663px;
+		margin    : 0 auto;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+		margin : 0;
+
+	}
+}
+
+.guarantee__item {
+	position : absolute;
+	top      : 0;
+	width    : 216px;
+
+	@media screen and (min-width : $break-table) {
+		width : 216px;
+
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+
+	img {
+		width      : 100%;
+		height     : 100%;
+		object-fit : cover;
+	}
+
+	&:nth-child(1) {
+		z-index : 1;
+		left    : -19px;
+		width   : 240px;
+		top     : -2px;
+
+		@media screen and (min-width : $break-table) {
+			left    : 0;
+			width   : 260px;
+			top     : 0;
+			z-index : 3;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+
+		}
+	}
+
+	&:nth-child(2) {
+		z-index : 2;
+		left    : 38px;
+		top     : 50px;
+		width   : 240px;
+
+		@media screen and (min-width : $break-table) {
+			left  : 210px;
+			top   : 10px;
+			width : 260px;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+
+		}
+	}
+
+	&:nth-child(3) {
+		z-index : 3;
+		left    : 127px;
+		top     : 95px;
+		width   : 250px;
+
+		@media screen and (min-width : $break-table) {
+			left    : 411px;
+			top     : 38px;
+			width   : 260px;
+			z-index : 1;
+		}
+
+		@media screen and (min-width : $break-desktop) {
+
+		}
+	}
+}
+
+.guarantee__img {
+	margin-top : -100px;
+	position   : relative;
+	bottom     : -105px;
+
+	@media screen and (min-width : $break-table) {
+		bottom     : 0;
+		margin-top : auto;
+	}
+
+	@media screen and (min-width : $break-desktop) {
+
+	}
+
+	img {
+		max-width : none;
+		width     : 427px;
+		@media screen and (min-width : 450px) {
+			max-width : 100%;
+			width     : auto;
+		}
+	}
+}

@@ -1,0 +1,55 @@
+{% extends "../template/layout.twig" %}
+{% block title %}Заказ оформлен{% endblock %}
+{% block page %}
+	<div class="system">
+		<div class="container">
+			<div class="system__grid">
+				<div class="system__left">
+					<div class="order-number">
+						№ 0001
+					</div>
+					<div class="system__wrap">
+						<h2 class="system__title">Заказ успешно оформлен</h2>
+						<div class="system__text">
+							В ближейшее время наш менеджер свяжется с вами для подтверждения и обсуждения деталей
+						</div>
+						<div class="system__buttons">
+							<a href="index.html" class="b-btn b-btn--primary">
+								<span>На главную</span>
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.33203 8H12.6654M12.6654 8L8.66536 4M12.6654 8L8.66536 12" stroke="white"
+									      stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+							<a href="catalog.html" class="b-btn b-btn--secondary">
+								Смотреть каталог
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="system__img">
+					<picture>
+						<source media="(min-width:1199px)"
+						        srcset="images/system/order-successfull.webp 1x, images/system/order-successfull@2x.webp 1.3x"
+						        type="image/webp">
+						<source media="(min-width:1199px)"
+						        srcset="images/system/order-successfull.jpg 1x, images/system/order-successfull@2x.jpg 1.3x"
+						        type="image/jpg">
+						<source media="(min-width:767px)"
+						        srcset="images/system/order-successfull-tablet.webp 1x, images/system/order-successfull-tablet@2x.webp 1.3x"
+						        type="image/webp">
+						<source media="(min-width:767px)"
+						        srcset="images/system/order-successfull-tablet.jpg 1x, images/system/order-successfull-tablet@2x.jpg 1.3x"
+						        type="image/jpg">
+						<source srcset="images/system/order-successfull-mob.webp 1x, images/system/order-successfull-mob@2x.webp 1.3x"
+						        type="image/webp">
+						<source srcset="images/system/order-successfull-mob.jpg 1x, images/system/order-successfull-mob@2x.jpg 1.3x"
+						        type="image/jpg">
+						<img src="images/system/order-successfull-mob.jpg" width="577" height="600" alt=""
+						     loading="lazy">
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

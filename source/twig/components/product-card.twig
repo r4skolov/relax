@@ -1,0 +1,55 @@
+<div class="product-card{{ class ? ' ' ~ class }}">
+	<div class="product-card__img">
+		<a href="product.html">
+			{% if item.label %}
+				<div class="product-card__label">
+					{{ item.label }}
+				</div>
+			{% endif %}
+			<picture>
+				<source srcset="{{ item.img }}.webp 1x, {{ item.img }}@2x.webp 1.3x"
+				        type="image/webp">
+				<source srcset="{{ item.img }}.jpg 1x, {{ item.img }}@2x.jpg 1.3x"
+				        type="image/png">
+				<img src="{{ item.img }}.jpg" width="347" height="400" alt="" loading="lazy">
+			</picture>
+		</a>
+	</div>
+	<div class="product-card__main">
+		<div class="product-card__top">
+			<div class="product-card__name">
+				{{ item.name }}
+			</div>
+			<div class="product-card__price">
+				{% if item.oldprice %}
+					<div class="old-price">{{ item.oldprice }}</div>
+				{% endif %}
+				<div class="current-price">{{ item.currentPrice }}</div>
+			</div>
+		</div>
+		<div class="product-card__size">
+			<div class="product-card__subname">
+				{{ item.subname }}
+			</div>
+			<ul class="size list-reset">
+				{% for size in item.sizes %}
+					<li>
+						<input type="radio" name="{{ size.name }}" id="{{ size.id }}" value="{{ size.value }}"
+						       class="radio-hidden">
+						<label for="{{ size.id }}" class="radio-label">
+							<span class="label-text">{{ size.label }}</span>
+						</label>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<a href="product.html" class="b-btn b-btn--primary">
+			<span>Подробнее</span>
+			<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M3.3335 8H12.6668M12.6668 8L8.66683 4M12.6668 8L8.66683 12" stroke="white"
+				      stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</a>
+	</div>
+</div>
+

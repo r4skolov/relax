@@ -1,0 +1,58 @@
+// Variables
+// ---------
+:root {
+	--body-font-size                            : 16px;
+	--body-font                                 : "Onest", system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+	--body-font-alt                             : Georgia, Times, Times New Roman, serif;
+	--body-line-height                          : 161%;
+	--body-color                                : #333;
+	--body-background                           : #FFF;
+
+	// Table
+	--table-header-font-weight                  : 700;
+	--table-cell-padding                        : 5px 10px;
+
+	// Text
+	--heading-font-weight                       : 700;
+	--heading-line-height                       : 1.2;
+	--heading-margin                            : 0 0 1em;
+	--paragraph-margin                          : 0 0 1em;
+	--list-margin                               : 1em 0;
+	--h1                                        : 28px;
+	--h2                                        : 24px;
+	--h3                                        : 20px;
+	--h4                                        : 18px;
+	--h5                                        : 16px;
+	--bold-font-weight                          : 700;
+	--text-small                                : 14px;
+
+	// Color
+	--main                                      : var(--body-color);
+	--red                                       : #F61001;
+	--link-color                                : #203735;
+	--link-color-hover                          : #37605C;
+	--dark-color                                : #333;
+	--black-color                               : #111;
+	--background-color                          : #FAFAFA;
+	--blue-color                                : #349FEC;
+	--light-blue                                : #EFF8FF;
+	--white-color                               : #FFF;
+	--gray-color                                : #C4C4C4;
+	--gray2-color                               : #7D7D7D;
+	--light-green                               : #DAF7EE;
+
+	--border-radius-big                         : 20px;
+	--border-radius-md                          : 12px;
+	--border-radius-sm                          : 8px;
+
+	// Swiper
+	--swiper-theme-color                        : #FFF;
+	--swiper-preloader-color                    : var(--swiper-theme-color);
+	--swiper-wrapper-transition-timing-function : initial;
+}
+
+// Breakpoints
+$break-desktop     : 1199px;
+$break-desktop-max : (1081 - 0.02) * 1px;
+$break-table       : 767px;
+$break-table-max   : (681 - 0.02) * 1px;

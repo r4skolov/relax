@@ -1,0 +1,16 @@
+{% extends "../template/layout.twig" %}
+{% block title %}Контакты{% endblock %}
+{% block page %}
+	{% include '../components/breadcrumbs.twig' with {
+		breadcrumbs:[
+			{
+				'link':'fabrics.html',
+				'name':'Контакты',
+				'active':true
+			}
+		]
+	} only %}
+	{% include '../partial/contacts/contact.twig' with {} only %}
+	{% include '../partial/contacts/map.twig' with {} only %}
+	{% include '../blocks/banner-big.twig' with {} only %}
+{% endblock %}

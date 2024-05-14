@@ -1,0 +1,52 @@
+// Load Mixins and Classes
+// -----------------------
+@import "helpers/config-main";
+@import "helpers/mixins";
+@import "helpers/fab-unit";
+@import "helpers/classes";
+@import "helpers/fonts";
+@import "helpers/normalize";
+@import "helpers/typography";
+@import "helpers/sprite";
+
+// Vendors
+@import "vendors/inputs";
+@import "vendors/form";
+@import "vendors/buttons";
+@import "vendors/swiper";
+@import "vendors/modal";
+
+// Components
+@import "components/nav";
+@import "components/card-product";
+@import "components/size";
+@import "components/banner-form";
+@import "components/card-reviews";
+@import "components/breadcrumbs";
+@import "components/add-slider";
+@import "components/video-review";
+@import "components/tabs";
+@import "components/pagination";
+@import "components/banner-big";
+@import "components/accordion";
+@import "components/cat-item";
+@import "components/geo-city";
+
+// View
+@import "view/page";
+
+// Module
+@import "sections/header";
+@import "sections/section";
+@import "sections/footer";
+
+//Pages
+@import "pages/home";
+@import "pages/product";
+@import "pages/fabrics";
+@import "pages/delivery";
+@import "pages/legs";
+@import "pages/contacts";
+@import "pages/reviews";
+@import "pages/system";
+@import "pages/privacy";

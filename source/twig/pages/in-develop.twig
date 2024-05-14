@@ -1,0 +1,38 @@
+{% extends "../template/layout.twig" %}
+{% block title %}Страница находится в разработке{% endblock %}
+{% block page %}
+	<div class="system">
+		<div class="container">
+			<div class="system__grid">
+				<div class="system__left">
+					<h2 class="system__title">Страница находится в разработке</h2>
+					<div class="system__text">
+						Данный раздел скоро будет доступен. Пожалуйста, загляните сюда позже
+					</div>
+					<div class="system__buttons">
+						<a href="index.html" class="b-btn b-btn--primary">
+							<span>На главную</span>
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+							     xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.33203 8H12.6654M12.6654 8L8.66536 4M12.6654 8L8.66536 12" stroke="white"
+								      stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+						<a href="catalog.html" class="b-btn b-btn--secondary">
+							Смотреть каталог
+						</a>
+					</div>
+				</div>
+				<div class="system__img">
+					<picture>
+						<source srcset="images/system/develop.webp 1x, images/system/develop@2x.webp 1.3x"
+						        type="image/webp">
+						<source srcset="images/system/develop.jpg 1x, images/system/develop@2x.jpg 1.3x"
+						        type="image/jpg">
+						<img src="images/system/develop.jpg" width="577" height="600" alt="" loading="lazy">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

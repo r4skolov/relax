@@ -1,0 +1,34 @@
+<div class="video-reviews{{ class ? ' ' ~ class }}">
+	<a href="{{ item.videoLink }}" class="video-reviews__content glightbox">
+		<picture>
+			<source srcset="{{ item.videoImg }}.webp 1x, {{ item.videoImg }}@2x.webp 1.3x"
+			        type="image/webp">
+			<source srcset="{{ item.videoImg }}.jpg 1x, {{ item.videoImg }}@2x.jpg 1.3x"
+			        type="image/jpg">
+			<img src="{{ item.videoImg }}.jpg" width="435" height="327" alt="" loading="lazy">
+		</picture>
+		<div class="video-btn">
+			<svg width="100" height="100" viewBox="0 0 100 100" fill="none"
+			     xmlns="http://www.w3.org/2000/svg">
+				<circle cx="49.5" cy="49.5" r="49.5" fill="white"/>
+				<path d="M64.9002 46.4948C66.3669 47.3416 66.3669 49.4586 64.9002 50.3054L41.8002 63.6421C40.3335 64.4889 38.5002 63.4305 38.5002 61.7369V35.0633C38.5002 33.3697 40.3335 32.3113 41.8002 33.1581L64.9002 46.4948Z"
+				      fill="#349FEC"/>
+			</svg>
+		</div>
+	</a>
+	<div class="video-reviews__main">
+		<ul class="video-reviews__rating list-reset">
+			{% for rating in item.ratings %}
+				{{ rating.star|raw }}
+			{% endfor %}
+		</ul>
+		<div class="video-reviews__name">
+			{{ item.name }}
+		</div>
+		<div class="video-reviews__text">
+			<p>
+				{{ item.text }}
+			</p>
+		</div>
+	</div>
+</div>
